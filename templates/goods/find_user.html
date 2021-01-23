@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--  要求当前页面使用IE浏览器最高版本的内核来渲染-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=0">
+    <meta charset="UTF-8">
+    <title>find_user</title>
+    <link rel="stylesheet" href="/css/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+</head>
+<body>
+<h1>商品名:{{ goods.goods_name }}</h1>
+<h1>价格:￥{{ goods.price }}</h1>
+<hr>
+<h2>购买此商品的用户的有</h2>
+{{ goods.users }}
+<ul>
+{#users = db.relationship('User', backref='goods')#}
+{% for user in goods.users %}
+    <li><a href="{{ url_for('goods.find_goods', user_id=user.id) }}">{{ user.username }}</a></li>
+{% endfor %}
+</ul>
+
+
+</body>
+</html>

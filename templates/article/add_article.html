@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>添加文章</title>
+    <link rel="stylesheet" href="/css/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+</head>
+<body>
+<form action="{{ url_for('article.publish') }}" method="post">
+    <p><input type="text" name="title" placeholder="文章标题" class="form-control"></p>
+    <p>
+        <textarea placeholder="输入文章内容" id="" cols="30" rows="10" class="form-control" name="content"></textarea>
+    </p>
+    <p>
+        <select name="user_id" id="" class="form-control">
+            <option value="0">请选择用户</option>
+            {% for user in users %}
+
+                <option value="{{ user.id }}">{{ user.username }}</option>
+            {% endfor %}
+        </select>
+    </p>
+    <p><input type="submit" value="添加文章" class="btn btn-primary"></p>
+</form>
+</body>
+</html>

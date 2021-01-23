@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% block title %}
+    博客首页
+{% endblock %}
+
+{% block styles %}
+    {{ super() }}
+    <style>
+        #container {
+            width: 1000px;
+            margin: 0 auto;
+        }
+        .article {
+            width: 900px;
+            background-color: blueviolet;
+            margin-bottom: 20px;
+            border: 1px solid gray;
+        }
+    </style>
+{% endblock %}
+
+{% block newcontent %}
+    <div id="container">
+        {% for article in articles %}
+            <div class="article">
+                <h1>{{ article.title }}</h1>
+                <p>{{ article.content }}</p>
+                <h6>发布时间:{{ article.publish_date }}</h6>
+                <h6>点击量:{{ article.click_num }}</h6>
+                <h6>收藏量:{{ article.save_num }}</h6>
+                <h6>喜欢:{{ article.love_num }}</h6>
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}

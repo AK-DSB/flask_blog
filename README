@@ -1,0 +1,46 @@
+AK望🌹❤️ 17:00:37
+SecretId：29ac6da14b2352dd026853cc07c9efe3
+
+AK望🌹❤️ 17:00:48
+SecretKey：5d13cfdd533a5dd0325a265df04da666
+
+aa366f395c214a57a33bdbd968263539
+
+
+钩子函数
+直接应用在app上:
+before_first_request
+before_request
+after_request
+teardown_request
+
+
+应用在蓝图上，只是比app多了一个app
+before_app_first_request
+before_app_request
+
+# 先启动nginx服务
+nginx -t /root/flask_blog/nginx.conf
+# 然后启动uwsgi服务
+uwsgi --ini /root/flask_blog/uwsgi.ini
+
+1. Nginx 开启
+nginx -c /home/www/nginx.conf
+1
+-c是指定配置文件,不然用默认的配置,后面的文件路径最好从根目录开始,不然会有一个默认目录,试一下就知道了
+2. Nginx 关闭:
+nginx -s stop
+1
+3. Uwsgi 开启
+uwsgi -d --ini uwsgi.ini
+1
+-d是表示在后台运行
+4. Uwsig 关闭
+uwsgi --stop uwsgi.pid
+pkill -f uwsgi -9
+1
+2
+这个uwsgi.pid是uwsgi.ini中指定的文件,运行后存的是uwsgi进程的pid
+5. Uwsig 重启
+uwsgi --reload uwsgi.pid
+

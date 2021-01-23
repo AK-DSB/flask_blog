@@ -1,0 +1,1405 @@
+*** Starting uWSGI 2.0.19.1 (64bit) on [Sat Jan 16 20:21:42 2021] ***
+compiled with version: 7.5.0 on 16 January 2021 08:40:55
+os: Linux-4.15.0-132-generic #136-Ubuntu SMP Tue Jan 12 14:58:42 UTC 2021
+nodename: iZuf6g230darhjv5t9qpvjZ
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /root/flask_blog
+writing pidfile to uwsgi.pid
+detected binary path: /root/.virtualenvs/myblog/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /root/flask_blog
+your processes number limit is 7794
+your memory page size is 4096 bytes
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 0.0.0.0:8080 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:37691 (port auto-assigned) fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.9 (default, Oct  8 2020, 12:12:24)  [GCC 8.4.0]
+Python main interpreter initialized at 0x55ddaf1590c0
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 835120 bytes (815 KB) for 40 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x55ddaf1590c0 pid: 19989 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 19989)
+spawned uWSGI worker 1 (pid: 20041, cores: 10)
+spawned uWSGI worker 2 (pid: 20042, cores: 10)
+spawned uWSGI worker 3 (pid: 20043, cores: 10)
+spawned uWSGI worker 4 (pid: 20044, cores: 10)
+spawned uWSGI http 1 (pid: 20045)
+*** Starting uWSGI 2.0.19.1 (64bit) on [Sat Jan 16 20:29:00 2021] ***
+compiled with version: 7.5.0 on 16 January 2021 08:40:55
+os: Linux-4.15.0-132-generic #136-Ubuntu SMP Tue Jan 12 14:58:42 UTC 2021
+nodename: iZuf6g230darhjv5t9qpvjZ
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /root/flask_blog
+writing pidfile to uwsgi.pid
+detected binary path: /root/.virtualenvs/myblog/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /root/flask_blog
+your processes number limit is 7794
+your memory page size is 4096 bytes
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+probably another instance of uWSGI is running on the same address (0.0.0.0:8080).
+bind(): Address already in use [core/socket.c line 769]
+*** Starting uWSGI 2.0.19.1 (64bit) on [Sat Jan 16 20:34:19 2021] ***
+compiled with version: 7.5.0 on 16 January 2021 08:40:55
+os: Linux-4.15.0-132-generic #136-Ubuntu SMP Tue Jan 12 14:58:42 UTC 2021
+nodename: iZuf6g230darhjv5t9qpvjZ
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /root/flask_blog
+writing pidfile to uwsgi.pid
+detected binary path: /root/.virtualenvs/myblog/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /root/flask_blog
+your processes number limit is 7794
+your memory page size is 4096 bytes
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+probably another instance of uWSGI is running on the same address (0.0.0.0:8080).
+bind(): Address already in use [core/socket.c line 769]
+before_app_first_request
+before_first_request1: /user/
+ImmutableMultiDict([('session', 'eyJ1c2VyX2lkIjoxfQ.YAKOew.4E-Y7Ek5sj_ExW3X84RUvJIpQ6g')])
+session: <SecureCookieSession {'user_id': 1}>
+1
+2021-01-16 20:48:19,251 INFO sqlalchemy.engine.base.Engine SHOW VARIABLES LIKE 'sql_mode'
+2021-01-16 20:48:19,251 INFO sqlalchemy.engine.base.Engine {}
+2021-01-16 20:48:19,254 INFO sqlalchemy.engine.base.Engine SHOW VARIABLES LIKE 'lower_case_table_names'
+2021-01-16 20:48:19,254 INFO sqlalchemy.engine.base.Engine {}
+2021-01-16 20:48:19,256 INFO sqlalchemy.engine.base.Engine SELECT DATABASE()
+2021-01-16 20:48:19,256 INFO sqlalchemy.engine.base.Engine {}
+2021-01-16 20:48:19,257 INFO sqlalchemy.engine.base.Engine show collation where `Charset` = 'utf8mb4' and `Collation` = 'utf8mb4_bin'
+2021-01-16 20:48:19,257 INFO sqlalchemy.engine.base.Engine {}
+2021-01-16 20:48:19,259 INFO sqlalchemy.engine.base.Engine SELECT CAST('test plain returns' AS CHAR(60)) AS anon_1
+2021-01-16 20:48:19,259 INFO sqlalchemy.engine.base.Engine {}
+2021-01-16 20:48:19,260 INFO sqlalchemy.engine.base.Engine SELECT CAST('test unicode returns' AS CHAR(60)) AS anon_1
+2021-01-16 20:48:19,260 INFO sqlalchemy.engine.base.Engine {}
+2021-01-16 20:48:19,260 INFO sqlalchemy.engine.base.Engine SELECT CAST('test collated returns' AS CHAR CHARACTER SET utf8mb4) COLLATE utf8mb4_bin AS anon_1
+2021-01-16 20:48:19,260 INFO sqlalchemy.engine.base.Engine {}
+2021-01-16 20:48:19,261 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2021-01-16 20:48:19,262 INFO sqlalchemy.engine.base.Engine SELECT article.id AS article_id, article.title AS article_title, article.content AS article_content, article.publish_date AS article_publish_date, article.click_num AS article_click_num, article.save_num AS article_save_num, article.love_num AS article_love_num, article.user_id AS article_user_id, article.type_id AS article_type_id 
+FROM article ORDER BY -article.publish_date 
+ LIMIT %(param_1)s, %(param_2)s
+2021-01-16 20:48:19,263 INFO sqlalchemy.engine.base.Engine {'param_1': 0, 'param_2': 3}
+2021-01-16 20:48:19,267 INFO sqlalchemy.engine.base.Engine SELECT count(*) AS count_1 
+FROM (SELECT article.id AS article_id, article.title AS article_title, article.content AS article_content, article.publish_date AS article_publish_date, article.click_num AS article_click_num, article.save_num AS article_save_num, article.love_num AS article_love_num, article.user_id AS article_user_id, article.type_id AS article_type_id 
+FROM article) AS anon_1
+2021-01-16 20:48:19,267 INFO sqlalchemy.engine.base.Engine {}
+[<Article 10>, <Article 8>, <Article 7>]
+1
+None
+2
+True
+False
+3
+9
+2021-01-16 20:48:19,269 INFO sqlalchemy.engine.base.Engine SELECT article_type.id AS article_type_id, article_type.type_name AS article_type_type_name 
+FROM article_type
+2021-01-16 20:48:19,269 INFO sqlalchemy.engine.base.Engine {}
+2021-01-16 20:48:19,272 INFO sqlalchemy.engine.base.Engine SELECT user.id AS user_id, user.username AS user_username, user.password AS user_password, user.phone AS user_phone, user.email AS user_email, user.icon AS user_icon, user.is_delete AS user_is_delete, user.register_time AS user_register_time 
+FROM user 
+WHERE user.id = %(param_1)s
+2021-01-16 20:48:19,272 INFO sqlalchemy.engine.base.Engine {'param_1': 1}
+2021-01-16 20:48:19,311 INFO sqlalchemy.engine.base.Engine SELECT user.id AS user_id, user.username AS user_username, user.password AS user_password, user.phone AS user_phone, user.email AS user_email, user.icon AS user_icon, user.is_delete AS user_is_delete, user.register_time AS user_register_time 
+FROM user 
+WHERE user.id = %(param_1)s
+2021-01-16 20:48:19,311 INFO sqlalchemy.engine.base.Engine {'param_1': 4}
+<Response 8199 bytes [200 OK]>
+ImmutableMultiDict([('session', 'eyJ1c2VyX2lkIjoxfQ.YAKOew.4E-Y7Ek5sj_ExW3X84RUvJIpQ6g')])
+2021-01-16 20:48:19,314 INFO sqlalchemy.engine.base.Engine ROLLBACK
+[pid: 20041|app: 0|req: 1/1] 43.250.201.49 () {40 vars in 797 bytes} [Sat Jan 16 20:48:19 2021] GET /user/ => generated 8199 bytes in 114 msecs (HTTP/1.1 200) 4 headers in 180 bytes (1 switches on core 0)
+before_first_request1: /img/bg.jpg
+<Response streamed [200 OK]>
+ImmutableMultiDict([('session', 'eyJ1c2VyX2lkIjoxfQ.YAKOew.4E-Y7Ek5sj_ExW3X84RUvJIpQ6g'), ('username', 'AKW')])
+[pid: 20041|app: 0|req: 2/2] 43.250.201.49 () {38 vars in 731 bytes} [Sat Jan 16 20:48:19 2021] GET /img/bg.jpg => generated 80025 bytes in 2 msecs via sendfile() (HTTP/1.1 200) 8 headers in 353 bytes (0 switches on core 1)
+before_app_first_request
+before_first_request1: /upload/icon/Erha.jpg
+<Response streamed [200 OK]>
+ImmutableMultiDict([('session', 'eyJ1c2VyX2lkIjoxfQ.YAKOew.4E-Y7Ek5sj_ExW3X84RUvJIpQ6g'), ('username', 'AKW')])
+[pid: 20042|app: 0|req: 1/3] 43.250.201.49 () {38 vars in 751 bytes} [Sat Jan 16 20:48:19 2021] GET /upload/icon/Erha.jpg => generated 60584 bytes in 6 msecs via sendfile() (HTTP/1.1 200) 8 headers in 353 bytes (0 switches on core 0)
+before_first_request1: /favicon.ico
+<Response streamed [404 NOT FOUND]>
+ImmutableMultiDict([('session', 'eyJ1c2VyX2lkIjoxfQ.YAKOew.4E-Y7Ek5sj_ExW3X84RUvJIpQ6g'), ('username', 'AKW')])
+[pid: 20041|app: 0|req: 3/4] 43.250.201.49 () {42 vars in 786 bytes} [Sat Jan 16 20:48:20 2021] GET /favicon.ico => generated 232 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 172 bytes (1 switches on core 2)
+before_first_request1: /article/detail
+2021-01-16 20:49:01,656 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2021-01-16 20:49:01,657 INFO sqlalchemy.engine.base.Engine SELECT article.id AS article_id, article.title AS article_title, article.content AS article_content, article.publish_date AS article_publish_date, article.click_num AS article_click_num, article.save_num AS article_save_num, article.love_num AS article_love_num, article.user_id AS article_user_id, article.type_id AS article_type_id 
+FROM article 
+WHERE article.id = %(param_1)s
+2021-01-16 20:49:01,657 INFO sqlalchemy.engine.base.Engine {'param_1': '10'}
+2021-01-16 20:49:01,659 INFO sqlalchemy.engine.base.Engine SELECT article_type.id AS article_type_id, article_type.type_name AS article_type_type_name 
+FROM article_type
+2021-01-16 20:49:01,659 INFO sqlalchemy.engine.base.Engine {}
+2021-01-16 20:49:01,661 INFO sqlalchemy.engine.base.Engine SELECT user.id AS user_id, user.username AS user_username, user.password AS user_password, user.phone AS user_phone, user.email AS user_email, user.icon AS user_icon, user.is_delete AS user_is_delete, user.register_time AS user_register_time 
+FROM user 
+WHERE user.id = %(param_1)s
+2021-01-16 20:49:01,661 INFO sqlalchemy.engine.base.Engine {'param_1': 1}
+2021-01-16 20:49:01,663 INFO sqlalchemy.engine.base.Engine SELECT comment.id AS comment_id, comment.comment AS comment_comment, comment.user_id AS comment_user_id, comment.article_id AS comment_article_id, comment.comment_date AS comment_comment_date 
+FROM comment 
+WHERE comment.article_id = %(article_id_1)s ORDER BY -comment.comment_date 
+ LIMIT %(param_1)s, %(param_2)s
+2021-01-16 20:49:01,663 INFO sqlalchemy.engine.base.Engine {'article_id_1': '10', 'param_1': 0, 'param_2': 5}
+2021-01-16 20:49:01,669 INFO sqlalchemy.engine.base.Engine SELECT count(*) AS count_1 
+FROM (SELECT comment.id AS comment_id, comment.comment AS comment_comment, comment.user_id AS comment_user_id, comment.article_id AS comment_article_id, comment.comment_date AS comment_comment_date 
+FROM comment 
+WHERE comment.article_id = %(article_id_1)s) AS anon_1
+2021-01-16 20:49:01,669 INFO sqlalchemy.engine.base.Engine {'article_id_1': '10'}
+2021-01-16 20:49:01,688 INFO sqlalchemy.engine.base.Engine SELECT user.id AS user_id, user.username AS user_username, user.password AS user_password, user.phone AS user_phone, user.email AS user_email, user.icon AS user_icon, user.is_delete AS user_is_delete, user.register_time AS user_register_time 
+FROM user 
+WHERE user.id = %(param_1)s
+2021-01-16 20:49:01,688 INFO sqlalchemy.engine.base.Engine {'param_1': 4}
+<Response 10515 bytes [200 OK]>
+ImmutableMultiDict([('session', 'eyJ1c2VyX2lkIjoxfQ.YAKOew.4E-Y7Ek5sj_ExW3X84RUvJIpQ6g')])
+2021-01-16 20:49:01,690 INFO sqlalchemy.engine.base.Engine ROLLBACK
+[pid: 20041|app: 0|req: 4/5] 43.250.201.49 () {40 vars in 858 bytes} [Sat Jan 16 20:49:01 2021] GET /article/detail?article_id=10 => generated 10515 bytes in 38 msecs (HTTP/1.1 200) 4 headers in 181 bytes (1 switches on core 3)
+before_first_request1: /article/save
+2021-01-16 20:49:04,937 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2021-01-16 20:49:04,937 INFO sqlalchemy.engine.base.Engine SELECT article.id AS article_id, article.title AS article_title, article.content AS article_content, article.publish_date AS article_publish_date, article.click_num AS article_click_num, article.save_num AS article_save_num, article.love_num AS article_love_num, article.user_id AS article_user_id, article.type_id AS article_type_id 
+FROM article 
+WHERE article.id = %(param_1)s
+2021-01-16 20:49:04,938 INFO sqlalchemy.engine.base.Engine {'param_1': '10'}
+2021-01-16 20:49:04,941 INFO sqlalchemy.engine.base.Engine UPDATE article SET save_num=%(save_num)s WHERE article.id = %(article_id)s
+2021-01-16 20:49:04,941 INFO sqlalchemy.engine.base.Engine {'save_num': 1, 'article_id': 10}
+2021-01-16 20:49:04,942 INFO sqlalchemy.engine.base.Engine COMMIT
+2021-01-16 20:49:04,945 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2021-01-16 20:49:04,946 INFO sqlalchemy.engine.base.Engine SELECT article.id AS article_id, article.title AS article_title, article.content AS article_content, article.publish_date AS article_publish_date, article.click_num AS article_click_num, article.save_num AS article_save_num, article.love_num AS article_love_num, article.user_id AS article_user_id, article.type_id AS article_type_id 
+FROM article 
+WHERE article.id = %(param_1)s
+2021-01-16 20:49:04,946 INFO sqlalchemy.engine.base.Engine {'param_1': 10}
+<Response 15 bytes [200 OK]>
+ImmutableMultiDict([('session', 'eyJ1c2VyX2lkIjoxfQ.YAKOew.4E-Y7Ek5sj_ExW3X84RUvJIpQ6g'), ('username', 'AKW')])
+2021-01-16 20:49:04,948 INFO sqlalchemy.engine.base.Engine ROLLBACK
+[pid: 20041|app: 0|req: 5/6] 43.250.201.49 () {40 vars in 776 bytes} [Sat Jan 16 20:49:04 2021] GET /article/save?article_id=10&tag=0 => generated 15 bytes in 14 msecs (HTTP/1.1 200) 3 headers in 156 bytes (1 switches on core 4)
+before_first_request1: /article/love
+2021-01-16 20:49:05,656 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2021-01-16 20:49:05,657 INFO sqlalchemy.engine.base.Engine SELECT article.id AS article_id, article.title AS article_title, article.content AS article_content, article.publish_date AS article_publish_date, article.click_num AS article_click_num, article.save_num AS article_save_num, article.love_num AS article_love_num, article.user_id AS article_user_id, article.type_id AS article_type_id 
+FROM article 
+WHERE article.id = %(param_1)s
+2021-01-16 20:49:05,657 INFO sqlalchemy.engine.base.Engine {'param_1': '10'}
+2021-01-16 20:49:05,659 INFO sqlalchemy.engine.base.Engine UPDATE article SET love_num=%(love_num)s WHERE article.id = %(article_id)s
+2021-01-16 20:49:05,659 INFO sqlalchemy.engine.base.Engine {'love_num': 1, 'article_id': 10}
+2021-01-16 20:49:05,660 INFO sqlalchemy.engine.base.Engine COMMIT
+2021-01-16 20:49:05,664 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2021-01-16 20:49:05,664 INFO sqlalchemy.engine.base.Engine SELECT article.id AS article_id, article.title AS article_title, article.content AS article_content, article.publish_date AS article_publish_date, article.click_num AS article_click_num, article.save_num AS article_save_num, article.love_num AS article_love_num, article.user_id AS article_user_id, article.type_id AS article_type_id 
+FROM article 
+WHERE article.id = %(param_1)s
+2021-01-16 20:49:05,664 INFO sqlalchemy.engine.base.Engine {'param_1': 10}
+<Response 15 bytes [200 OK]>
+ImmutableMultiDict([('session', 'eyJ1c2VyX2lkIjoxfQ.YAKOew.4E-Y7Ek5sj_ExW3X84RUvJIpQ6g'), ('username', 'AKW')])
+2021-01-16 20:49:05,666 INFO sqlalchemy.engine.base.Engine ROLLBACK
+[pid: 20041|app: 0|req: 6/7] 43.250.201.49 () {40 vars in 776 bytes} [Sat Jan 16 20:49:05 2021] GET /article/love?article_id=10&tag=0 => generated 15 bytes in 12 msecs (HTTP/1.1 200) 3 headers in 156 bytes (1 switches on core 5)
+before_first_request1: /article/add_comment
+需要验证用户的登录情况
+1
+2021-01-16 20:49:19,439 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2021-01-16 20:49:19,440 INFO sqlalchemy.engine.base.Engine SELECT user.id AS user_id, user.username AS user_username, user.password AS user_password, user.phone AS user_phone, user.email AS user_email, user.icon AS user_icon, user.is_delete AS user_is_delete, user.register_time AS user_register_time 
+FROM user 
+WHERE user.id = %(param_1)s
+2021-01-16 20:49:19,440 INFO sqlalchemy.engine.base.Engine {'param_1': 1}
+g: <flask.g of 'apps'>
+2021-01-16 20:49:19,444 INFO sqlalchemy.engine.base.Engine INSERT INTO comment (comment, user_id, article_id, comment_date) VALUES (%(comment)s, %(user_id)s, %(article_id)s, %(comment_date)s)
+2021-01-16 20:49:19,444 INFO sqlalchemy.engine.base.Engine {'comment': '脑阔有', 'user_id': 1, 'article_id': '10', 'comment_date': datetime.datetime(2021, 1, 16, 20, 49, 19, 444196)}
+2021-01-16 20:49:19,445 INFO sqlalchemy.engine.base.Engine COMMIT
+<Response 265 bytes [302 FOUND]>
+ImmutableMultiDict([('session', 'eyJ1c2VyX2lkIjoxfQ.YAKOew.4E-Y7Ek5sj_ExW3X84RUvJIpQ6g'), ('username', 'AKW')])
+[pid: 20041|app: 0|req: 7/8] 43.250.201.49 () {48 vars in 1020 bytes} [Sat Jan 16 20:49:19 2021] POST /article/add_comment => generated 265 bytes in 11 msecs (HTTP/1.1 302) 5 headers in 248 bytes (1 switches on core 6)
+before_first_request1: /article/detail
+2021-01-16 20:49:19,523 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2021-01-16 20:49:19,524 INFO sqlalchemy.engine.base.Engine SELECT article.id AS article_id, article.title AS article_title, article.content AS article_content, article.publish_date AS article_publish_date, article.click_num AS article_click_num, article.save_num AS article_save_num, article.love_num AS article_love_num, article.user_id AS article_user_id, article.type_id AS article_type_id 
+FROM article 
+WHERE article.id = %(param_1)s
+2021-01-16 20:49:19,524 INFO sqlalchemy.engine.base.Engine {'param_1': '10'}
+2021-01-16 20:49:19,527 INFO sqlalchemy.engine.base.Engine SELECT article_type.id AS article_type_id, article_type.type_name AS article_type_type_name 
+FROM article_type
+2021-01-16 20:49:19,527 INFO sqlalchemy.engine.base.Engine {}
+2021-01-16 20:49:19,530 INFO sqlalchemy.engine.base.Engine SELECT user.id AS user_id, user.username AS user_username, user.password AS user_password, user.phone AS user_phone, user.email AS user_email, user.icon AS user_icon, user.is_delete AS user_is_delete, user.register_time AS user_register_time 
+FROM user 
+WHERE user.id = %(param_1)s
+2021-01-16 20:49:19,530 INFO sqlalchemy.engine.base.Engine {'param_1': 1}
+2021-01-16 20:49:19,533 INFO sqlalchemy.engine.base.Engine SELECT comment.id AS comment_id, comment.comment AS comment_comment, comment.user_id AS comment_user_id, comment.article_id AS comment_article_id, comment.comment_date AS comment_comment_date 
+FROM comment 
+WHERE comment.article_id = %(article_id_1)s ORDER BY -comment.comment_date 
+ LIMIT %(param_1)s, %(param_2)s
+2021-01-16 20:49:19,533 INFO sqlalchemy.engine.base.Engine {'article_id_1': '10', 'param_1': 0, 'param_2': 5}
+2021-01-16 20:49:19,538 INFO sqlalchemy.engine.base.Engine SELECT count(*) AS count_1 
+FROM (SELECT comment.id AS comment_id, comment.comment AS comment_comment, comment.user_id AS comment_user_id, comment.article_id AS comment_article_id, comment.comment_date AS comment_comment_date 
+FROM comment 
+WHERE comment.article_id = %(article_id_1)s) AS anon_1
+2021-01-16 20:49:19,538 INFO sqlalchemy.engine.base.Engine {'article_id_1': '10'}
+2021-01-16 20:49:19,542 INFO sqlalchemy.engine.base.Engine SELECT user.id AS user_id, user.username AS user_username, user.password AS user_password, user.phone AS user_phone, user.email AS user_email, user.icon AS user_icon, user.is_delete AS user_is_delete, user.register_time AS user_register_time 
+FROM user 
+WHERE user.id = %(param_1)s
+2021-01-16 20:49:19,542 INFO sqlalchemy.engine.base.Engine {'param_1': 4}
+<Response 11025 bytes [200 OK]>
+ImmutableMultiDict([('session', 'eyJ1c2VyX2lkIjoxfQ.YAKOew.4E-Y7Ek5sj_ExW3X84RUvJIpQ6g'), ('username', 'AKW')])
+2021-01-16 20:49:19,545 INFO sqlalchemy.engine.base.Engine ROLLBACK
+[pid: 20041|app: 0|req: 8/9] 43.250.201.49 () {42 vars in 927 bytes} [Sat Jan 16 20:49:19 2021] GET /article/detail?article_id=10 => generated 11025 bytes in 25 msecs (HTTP/1.1 200) 4 headers in 181 bytes (1 switches on core 7)
+before_first_request1: /user
+<Response streamed [308 PERMANENT REDIRECT]>
+ImmutableMultiDict([])
+[pid: 20041|app: 0|req: 9/10] 58.246.221.162 () {32 vars in 550 bytes} [Sat Jan 16 20:49:26 2021] GET /user => generated 269 bytes in 2 msecs (HTTP/1.1 308) 4 headers in 224 bytes (1 switches on core 8)
+before_app_first_request
+before_first_request1: /user/
+ImmutableMultiDict([('username', 'AKW')])
+session: <SecureCookieSession {}>
+None
+2021-01-16 20:49:36,840 INFO sqlalchemy.engine.base.Engine SHOW VARIABLES LIKE 'sql_mode'
+2021-01-16 20:49:36,840 INFO sqlalchemy.engine.base.Engine {}
+2021-01-16 20:49:36,844 INFO sqlalchemy.engine.base.Engine SHOW VARIABLES LIKE 'lower_case_table_names'
+2021-01-16 20:49:36,844 INFO sqlalchemy.engine.base.Engine {}
+2021-01-16 20:49:36,846 INFO sqlalchemy.engine.base.Engine SELECT DATABASE()
+2021-01-16 20:49:36,846 INFO sqlalchemy.engine.base.Engine {}
+2021-01-16 20:49:36,847 INFO sqlalchemy.engine.base.Engine show collation where `Charset` = 'utf8mb4' and `Collation` = 'utf8mb4_bin'
+2021-01-16 20:49:36,847 INFO sqlalchemy.engine.base.Engine {}
+2021-01-16 20:49:36,849 INFO sqlalchemy.engine.base.Engine SELECT CAST('test plain returns' AS CHAR(60)) AS anon_1
+2021-01-16 20:49:36,849 INFO sqlalchemy.engine.base.Engine {}
+2021-01-16 20:49:36,850 INFO sqlalchemy.engine.base.Engine SELECT CAST('test unicode returns' AS CHAR(60)) AS anon_1
+2021-01-16 20:49:36,850 INFO sqlalchemy.engine.base.Engine {}
+2021-01-16 20:49:36,850 INFO sqlalchemy.engine.base.Engine SELECT CAST('test collated returns' AS CHAR CHARACTER SET utf8mb4) COLLATE utf8mb4_bin AS anon_1
+2021-01-16 20:49:36,850 INFO sqlalchemy.engine.base.Engine {}
+2021-01-16 20:49:36,851 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2021-01-16 20:49:36,852 INFO sqlalchemy.engine.base.Engine SELECT article.id AS article_id, article.title AS article_title, article.content AS article_content, article.publish_date AS article_publish_date, article.click_num AS article_click_num, article.save_num AS article_save_num, article.love_num AS article_love_num, article.user_id AS article_user_id, article.type_id AS article_type_id 
+FROM article ORDER BY -article.publish_date 
+ LIMIT %(param_1)s, %(param_2)s
+2021-01-16 20:49:36,853 INFO sqlalchemy.engine.base.Engine {'param_1': 0, 'param_2': 3}
+2021-01-16 20:49:36,858 INFO sqlalchemy.engine.base.Engine SELECT count(*) AS count_1 
+FROM (SELECT article.id AS article_id, article.title AS article_title, article.content AS article_content, article.publish_date AS article_publish_date, article.click_num AS article_click_num, article.save_num AS article_save_num, article.love_num AS article_love_num, article.user_id AS article_user_id, article.type_id AS article_type_id 
+FROM article) AS anon_1
+2021-01-16 20:49:36,858 INFO sqlalchemy.engine.base.Engine {}
+[<Article 10>, <Article 8>, <Article 7>]
+1
+None
+2
+True
+False
+3
+9
+2021-01-16 20:49:36,860 INFO sqlalchemy.engine.base.Engine SELECT article_type.id AS article_type_id, article_type.type_name AS article_type_type_name 
+FROM article_type
+2021-01-16 20:49:36,860 INFO sqlalchemy.engine.base.Engine {}
+2021-01-16 20:49:36,900 INFO sqlalchemy.engine.base.Engine SELECT user.id AS user_id, user.username AS user_username, user.password AS user_password, user.phone AS user_phone, user.email AS user_email, user.icon AS user_icon, user.is_delete AS user_is_delete, user.register_time AS user_register_time 
+FROM user 
+WHERE user.id = %(param_1)s
+2021-01-16 20:49:36,900 INFO sqlalchemy.engine.base.Engine {'param_1': 4}
+2021-01-16 20:49:36,902 INFO sqlalchemy.engine.base.Engine SELECT user.id AS user_id, user.username AS user_username, user.password AS user_password, user.phone AS user_phone, user.email AS user_email, user.icon AS user_icon, user.is_delete AS user_is_delete, user.register_time AS user_register_time 
+FROM user 
+WHERE user.id = %(param_1)s
+2021-01-16 20:49:36,902 INFO sqlalchemy.engine.base.Engine {'param_1': 1}
+<Response 7315 bytes [200 OK]>
+ImmutableMultiDict([('username', 'AKW')])
+2021-01-16 20:49:36,905 INFO sqlalchemy.engine.base.Engine ROLLBACK
+[pid: 20043|app: 0|req: 1/11] 58.246.221.162 () {36 vars in 626 bytes} [Sat Jan 16 20:49:36 2021] GET /user/ => generated 7315 bytes in 109 msecs (HTTP/1.1 200) 3 headers in 166 bytes (1 switches on core 0)
+before_first_request1: /article/add_comment
+需要验证用户的登录情况
+1
+2021-01-16 20:49:38,856 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2021-01-16 20:49:38,857 INFO sqlalchemy.engine.base.Engine SELECT user.id AS user_id, user.username AS user_username, user.password AS user_password, user.phone AS user_phone, user.email AS user_email, user.icon AS user_icon, user.is_delete AS user_is_delete, user.register_time AS user_register_time 
+FROM user 
+WHERE user.id = %(param_1)s
+2021-01-16 20:49:38,857 INFO sqlalchemy.engine.base.Engine {'param_1': 1}
+g: <flask.g of 'apps'>
+2021-01-16 20:49:38,860 INFO sqlalchemy.engine.base.Engine INSERT INTO comment (comment, user_id, article_id, comment_date) VALUES (%(comment)s, %(user_id)s, %(article_id)s, %(comment_date)s)
+2021-01-16 20:49:38,860 INFO sqlalchemy.engine.base.Engine {'comment': '你屋里死行哒', 'user_id': 1, 'article_id': '10', 'comment_date': datetime.datetime(2021, 1, 16, 20, 49, 38, 860038)}
+2021-01-16 20:49:38,861 INFO sqlalchemy.engine.base.Engine COMMIT
+<Response 265 bytes [302 FOUND]>
+ImmutableMultiDict([('session', 'eyJ1c2VyX2lkIjoxfQ.YAKOew.4E-Y7Ek5sj_ExW3X84RUvJIpQ6g')])
+[pid: 20041|app: 0|req: 10/12] 43.250.201.49 () {48 vars in 1006 bytes} [Sat Jan 16 20:49:38 2021] POST /article/add_comment => generated 265 bytes in 11 msecs (HTTP/1.1 302) 5 headers in 248 bytes (1 switches on core 9)
+before_first_request1: /article/detail
+2021-01-16 20:49:38,922 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2021-01-16 20:49:38,922 INFO sqlalchemy.engine.base.Engine SELECT article.id AS article_id, article.title AS article_title, article.content AS article_content, article.publish_date AS article_publish_date, article.click_num AS article_click_num, article.save_num AS article_save_num, article.love_num AS article_love_num, article.user_id AS article_user_id, article.type_id AS article_type_id 
+FROM article 
+WHERE article.id = %(param_1)s
+2021-01-16 20:49:38,922 INFO sqlalchemy.engine.base.Engine {'param_1': '10'}
+2021-01-16 20:49:38,924 INFO sqlalchemy.engine.base.Engine SELECT article_type.id AS article_type_id, article_type.type_name AS article_type_type_name 
+FROM article_type
+2021-01-16 20:49:38,924 INFO sqlalchemy.engine.base.Engine {}
+2021-01-16 20:49:38,926 INFO sqlalchemy.engine.base.Engine SELECT user.id AS user_id, user.username AS user_username, user.password AS user_password, user.phone AS user_phone, user.email AS user_email, user.icon AS user_icon, user.is_delete AS user_is_delete, user.register_time AS user_register_time 
+FROM user 
+WHERE user.id = %(param_1)s
+2021-01-16 20:49:38,926 INFO sqlalchemy.engine.base.Engine {'param_1': 1}
+2021-01-16 20:49:38,929 INFO sqlalchemy.engine.base.Engine SELECT comment.id AS comment_id, comment.comment AS comment_comment, comment.user_id AS comment_user_id, comment.article_id AS comment_article_id, comment.comment_date AS comment_comment_date 
+FROM comment 
+WHERE comment.article_id = %(article_id_1)s ORDER BY -comment.comment_date 
+ LIMIT %(param_1)s, %(param_2)s
+2021-01-16 20:49:38,929 INFO sqlalchemy.engine.base.Engine {'article_id_1': '10', 'param_1': 0, 'param_2': 5}
+2021-01-16 20:49:38,933 INFO sqlalchemy.engine.base.Engine SELECT count(*) AS count_1 
+FROM (SELECT comment.id AS comment_id, comment.comment AS comment_comment, comment.user_id AS comment_user_id, comment.article_id AS comment_article_id, comment.comment_date AS comment_comment_date 
+FROM comment 
+WHERE comment.article_id = %(article_id_1)s) AS anon_1
+2021-01-16 20:49:38,933 INFO sqlalchemy.engine.base.Engine {'article_id_1': '10'}
+2021-01-16 20:49:38,951 INFO sqlalchemy.engine.base.Engine SELECT user.id AS user_id, user.username AS user_username, user.password AS user_password, user.phone AS user_phone, user.email AS user_email, user.icon AS user_icon, user.is_delete AS user_is_delete, user.register_time AS user_register_time 
+FROM user 
+WHERE user.id = %(param_1)s
+2021-01-16 20:49:38,951 INFO sqlalchemy.engine.base.Engine {'param_1': 4}
+<Response 11684 bytes [200 OK]>
+ImmutableMultiDict([('session', 'eyJ1c2VyX2lkIjoxfQ.YAKOew.4E-Y7Ek5sj_ExW3X84RUvJIpQ6g'), ('username', 'AKW')])
+2021-01-16 20:49:38,954 INFO sqlalchemy.engine.base.Engine ROLLBACK
+[pid: 20043|app: 0|req: 2/13] 43.250.201.49 () {42 vars in 927 bytes} [Sat Jan 16 20:49:38 2021] GET /article/detail?article_id=10 => generated 11684 bytes in 34 msecs (HTTP/1.1 200) 4 headers in 181 bytes (1 switches on core 1)
+before_first_request1: /user/logout
+<Response 219 bytes [302 FOUND]>
+ImmutableMultiDict([('session', 'eyJ1c2VyX2lkIjoxfQ.YAKOew.4E-Y7Ek5sj_ExW3X84RUvJIpQ6g')])
+[pid: 20043|app: 0|req: 3/14] 43.250.201.49 () {40 vars in 849 bytes} [Sat Jan 16 20:50:00 2021] GET /user/logout => generated 219 bytes in 3 msecs (HTTP/1.1 302) 5 headers in 291 bytes (1 switches on core 2)
+before_first_request1: /user/
+ImmutableMultiDict([('username', 'AKW')])
+session: <SecureCookieSession {}>
+None
+2021-01-16 20:50:00,497 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2021-01-16 20:50:00,498 INFO sqlalchemy.engine.base.Engine SELECT article.id AS article_id, article.title AS article_title, article.content AS article_content, article.publish_date AS article_publish_date, article.click_num AS article_click_num, article.save_num AS article_save_num, article.love_num AS article_love_num, article.user_id AS article_user_id, article.type_id AS article_type_id 
+FROM article ORDER BY -article.publish_date 
+ LIMIT %(param_1)s, %(param_2)s
+2021-01-16 20:50:00,498 INFO sqlalchemy.engine.base.Engine {'param_1': 0, 'param_2': 3}
+2021-01-16 20:50:00,502 INFO sqlalchemy.engine.base.Engine SELECT count(*) AS count_1 
+FROM (SELECT article.id AS article_id, article.title AS article_title, article.content AS article_content, article.publish_date AS article_publish_date, article.click_num AS article_click_num, article.save_num AS article_save_num, article.love_num AS article_love_num, article.user_id AS article_user_id, article.type_id AS article_type_id 
+FROM article) AS anon_1
+2021-01-16 20:50:00,502 INFO sqlalchemy.engine.base.Engine {}
+[<Article 10>, <Article 8>, <Article 7>]
+1
+None
+2
+True
+False
+3
+9
+2021-01-16 20:50:00,503 INFO sqlalchemy.engine.base.Engine SELECT article_type.id AS article_type_id, article_type.type_name AS article_type_type_name 
+FROM article_type
+2021-01-16 20:50:00,504 INFO sqlalchemy.engine.base.Engine {}
+2021-01-16 20:50:00,506 INFO sqlalchemy.engine.base.Engine SELECT user.id AS user_id, user.username AS user_username, user.password AS user_password, user.phone AS user_phone, user.email AS user_email, user.icon AS user_icon, user.is_delete AS user_is_delete, user.register_time AS user_register_time 
+FROM user 
+WHERE user.id = %(param_1)s
+2021-01-16 20:50:00,506 INFO sqlalchemy.engine.base.Engine {'param_1': 4}
+2021-01-16 20:50:00,507 INFO sqlalchemy.engine.base.Engine SELECT user.id AS user_id, user.username AS user_username, user.password AS user_password, user.phone AS user_phone, user.email AS user_email, user.icon AS user_icon, user.is_delete AS user_is_delete, user.register_time AS user_register_time 
+FROM user 
+WHERE user.id = %(param_1)s
+2021-01-16 20:50:00,507 INFO sqlalchemy.engine.base.Engine {'param_1': 1}
+<Response 7315 bytes [200 OK]>
+ImmutableMultiDict([('username', 'AKW')])
+2021-01-16 20:50:00,509 INFO sqlalchemy.engine.base.Engine ROLLBACK
+[pid: 20043|app: 0|req: 4/15] 43.250.201.49 () {40 vars in 788 bytes} [Sat Jan 16 20:50:00 2021] GET /user/ => generated 7315 bytes in 14 msecs (HTTP/1.1 200) 3 headers in 166 bytes (1 switches on core 3)
+before_first_request1: /user/register
+<Response 6576 bytes [200 OK]>
+ImmutableMultiDict([('username', 'AKW')])
+[pid: 20043|app: 0|req: 5/16] 43.250.201.49 () {40 vars in 781 bytes} [Sat Jan 16 20:50:02 2021] GET /user/register => generated 6576 bytes in 6 msecs (HTTP/1.1 200) 3 headers in 166 bytes (1 switches on core 4)
+before_first_request1: /article/detail
+2021-01-16 20:50:03,488 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2021-01-16 20:50:03,489 INFO sqlalchemy.engine.base.Engine SELECT article.id AS article_id, article.title AS article_title, article.content AS article_content, article.publish_date AS article_publish_date, article.click_num AS article_click_num, article.save_num AS article_save_num, article.love_num AS article_love_num, article.user_id AS article_user_id, article.type_id AS article_type_id 
+FROM article 
+WHERE article.id = %(param_1)s
+2021-01-16 20:50:03,489 INFO sqlalchemy.engine.base.Engine {'param_1': '10'}
+2021-01-16 20:50:03,491 INFO sqlalchemy.engine.base.Engine SELECT article_type.id AS article_type_id, article_type.type_name AS article_type_type_name 
+FROM article_type
+2021-01-16 20:50:03,491 INFO sqlalchemy.engine.base.Engine {}
+2021-01-16 20:50:03,493 INFO sqlalchemy.engine.base.Engine SELECT comment.id AS comment_id, comment.comment AS comment_comment, comment.user_id AS comment_user_id, comment.article_id AS comment_article_id, comment.comment_date AS comment_comment_date 
+FROM comment 
+WHERE comment.article_id = %(article_id_1)s ORDER BY -comment.comment_date 
+ LIMIT %(param_1)s, %(param_2)s
+2021-01-16 20:50:03,493 INFO sqlalchemy.engine.base.Engine {'article_id_1': '10', 'param_1': 0, 'param_2': 5}
+2021-01-16 20:50:03,496 INFO sqlalchemy.engine.base.Engine SELECT count(*) AS count_1 
+FROM (SELECT comment.id AS comment_id, comment.comment AS comment_comment, comment.user_id AS comment_user_id, comment.article_id AS comment_article_id, comment.comment_date AS comment_comment_date 
+FROM comment 
+WHERE comment.article_id = %(article_id_1)s) AS anon_1
+2021-01-16 20:50:03,496 INFO sqlalchemy.engine.base.Engine {'article_id_1': '10'}
+2021-01-16 20:50:03,498 INFO sqlalchemy.engine.base.Engine SELECT user.id AS user_id, user.username AS user_username, user.password AS user_password, user.phone AS user_phone, user.email AS user_email, user.icon AS user_icon, user.is_delete AS user_is_delete, user.register_time AS user_register_time 
+FROM user 
+WHERE user.id = %(param_1)s
+2021-01-16 20:50:03,498 INFO sqlalchemy.engine.base.Engine {'param_1': 4}
+2021-01-16 20:50:03,500 INFO sqlalchemy.engine.base.Engine SELECT user.id AS user_id, user.username AS user_username, user.password AS user_password, user.phone AS user_phone, user.email AS user_email, user.icon AS user_icon, user.is_delete AS user_is_delete, user.register_time AS user_register_time 
+FROM user 
+WHERE user.id = %(param_1)s
+2021-01-16 20:50:03,500 INFO sqlalchemy.engine.base.Engine {'param_1': 1}
+<Response 10800 bytes [200 OK]>
+ImmutableMultiDict([])
+2021-01-16 20:50:03,501 INFO sqlalchemy.engine.base.Engine ROLLBACK
+[pid: 20043|app: 0|req: 6/17] 223.167.152.53 () {34 vars in 645 bytes} [Sat Jan 16 20:50:03 2021] GET /article/detail?article_id=10 => generated 10800 bytes in 15 msecs (HTTP/1.1 200) 3 headers in 167 bytes (1 switches on core 5)
+before_first_request1: /article/save
+2021-01-16 20:50:12,267 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2021-01-16 20:50:12,268 INFO sqlalchemy.engine.base.Engine SELECT article.id AS article_id, article.title AS article_title, article.content AS article_content, article.publish_date AS article_publish_date, article.click_num AS article_click_num, article.save_num AS article_save_num, article.love_num AS article_love_num, article.user_id AS article_user_id, article.type_id AS article_type_id 
+FROM article 
+WHERE article.id = %(param_1)s
+2021-01-16 20:50:12,268 INFO sqlalchemy.engine.base.Engine {'param_1': '10'}
+2021-01-16 20:50:12,271 INFO sqlalchemy.engine.base.Engine UPDATE article SET save_num=%(save_num)s WHERE article.id = %(article_id)s
+2021-01-16 20:50:12,271 INFO sqlalchemy.engine.base.Engine {'save_num': 2, 'article_id': 10}
+2021-01-16 20:50:12,272 INFO sqlalchemy.engine.base.Engine COMMIT
+2021-01-16 20:50:12,276 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2021-01-16 20:50:12,277 INFO sqlalchemy.engine.base.Engine SELECT article.id AS article_id, article.title AS article_title, article.content AS article_content, article.publish_date AS article_publish_date, article.click_num AS article_click_num, article.save_num AS article_save_num, article.love_num AS article_love_num, article.user_id AS article_user_id, article.type_id AS article_type_id 
+FROM article 
+WHERE article.id = %(param_1)s
+2021-01-16 20:50:12,277 INFO sqlalchemy.engine.base.Engine {'param_1': 10}
+<Response 15 bytes [200 OK]>
+ImmutableMultiDict([])
+2021-01-16 20:50:12,279 INFO sqlalchemy.engine.base.Engine ROLLBACK
+[pid: 20043|app: 0|req: 7/18] 223.166.151.197 () {34 vars in 633 bytes} [Sat Jan 16 20:50:12 2021] GET /article/save?article_id=10&tag=0 => generated 15 bytes in 14 msecs (HTTP/1.1 200) 3 headers in 156 bytes (1 switches on core 6)
+before_first_request1: /article/detail
+2021-01-16 20:50:13,240 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2021-01-16 20:50:13,241 INFO sqlalchemy.engine.base.Engine SELECT article.id AS article_id, article.title AS article_title, article.content AS article_content, article.publish_date AS article_publish_date, article.click_num AS article_click_num, article.save_num AS article_save_num, article.love_num AS article_love_num, article.user_id AS article_user_id, article.type_id AS article_type_id 
+FROM article 
+WHERE article.id = %(param_1)s
+2021-01-16 20:50:13,241 INFO sqlalchemy.engine.base.Engine {'param_1': '10'}
+2021-01-16 20:50:13,243 INFO sqlalchemy.engine.base.Engine SELECT article_type.id AS article_type_id, article_type.type_name AS article_type_type_name 
+FROM article_type
+2021-01-16 20:50:13,243 INFO sqlalchemy.engine.base.Engine {}
+2021-01-16 20:50:13,246 INFO sqlalchemy.engine.base.Engine SELECT comment.id AS comment_id, comment.comment AS comment_comment, comment.user_id AS comment_user_id, comment.article_id AS comment_article_id, comment.comment_date AS comment_comment_date 
+FROM comment 
+WHERE comment.article_id = %(article_id_1)s ORDER BY -comment.comment_date 
+ LIMIT %(param_1)s, %(param_2)s
+2021-01-16 20:50:13,246 INFO sqlalchemy.engine.base.Engine {'article_id_1': '10', 'param_1': 0, 'param_2': 5}
+2021-01-16 20:50:13,250 INFO sqlalchemy.engine.base.Engine SELECT count(*) AS count_1 
+FROM (SELECT comment.id AS comment_id, comment.comment AS comment_comment, comment.user_id AS comment_user_id, comment.article_id AS comment_article_id, comment.comment_date AS comment_comment_date 
+FROM comment 
+WHERE comment.article_id = %(article_id_1)s) AS anon_1
+2021-01-16 20:50:13,250 INFO sqlalchemy.engine.base.Engine {'article_id_1': '10'}
+2021-01-16 20:50:13,253 INFO sqlalchemy.engine.base.Engine SELECT user.id AS user_id, user.username AS user_username, user.password AS user_password, user.phone AS user_phone, user.email AS user_email, user.icon AS user_icon, user.is_delete AS user_is_delete, user.register_time AS user_register_time 
+FROM user 
+WHERE user.id = %(param_1)s
+2021-01-16 20:50:13,253 INFO sqlalchemy.engine.base.Engine {'param_1': 4}
+2021-01-16 20:50:13,255 INFO sqlalchemy.engine.base.Engine SELECT user.id AS user_id, user.username AS user_username, user.password AS user_password, user.phone AS user_phone, user.email AS user_email, user.icon AS user_icon, user.is_delete AS user_is_delete, user.register_time AS user_register_time 
+FROM user 
+WHERE user.id = %(param_1)s
+2021-01-16 20:50:13,255 INFO sqlalchemy.engine.base.Engine {'param_1': 1}
+<Response 10800 bytes [200 OK]>
+ImmutableMultiDict([])
+2021-01-16 20:50:13,258 INFO sqlalchemy.engine.base.Engine ROLLBACK
+[pid: 20043|app: 0|req: 8/19] 223.166.151.197 () {34 vars in 602 bytes} [Sat Jan 16 20:50:13 2021] GET /article/detail?article_id=10 => generated 10800 bytes in 20 msecs (HTTP/1.1 200) 3 headers in 167 bytes (1 switches on core 7)
+before_first_request1: /article/love
+2021-01-16 20:50:16,371 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2021-01-16 20:50:16,372 INFO sqlalchemy.engine.base.Engine SELECT article.id AS article_id, article.title AS article_title, article.content AS article_content, article.publish_date AS article_publish_date, article.click_num AS article_click_num, article.save_num AS article_save_num, article.love_num AS article_love_num, article.user_id AS article_user_id, article.type_id AS article_type_id 
+FROM article 
+WHERE article.id = %(param_1)s
+2021-01-16 20:50:16,372 INFO sqlalchemy.engine.base.Engine {'param_1': '10'}
+2021-01-16 20:50:16,374 INFO sqlalchemy.engine.base.Engine UPDATE article SET love_num=%(love_num)s WHERE article.id = %(article_id)s
+2021-01-16 20:50:16,375 INFO sqlalchemy.engine.base.Engine {'love_num': 2, 'article_id': 10}
+2021-01-16 20:50:16,375 INFO sqlalchemy.engine.base.Engine COMMIT
+2021-01-16 20:50:16,379 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2021-01-16 20:50:16,380 INFO sqlalchemy.engine.base.Engine SELECT article.id AS article_id, article.title AS article_title, article.content AS article_content, article.publish_date AS article_publish_date, article.click_num AS article_click_num, article.save_num AS article_save_num, article.love_num AS article_love_num, article.user_id AS article_user_id, article.type_id AS article_type_id 
+FROM article 
+WHERE article.id = %(param_1)s
+2021-01-16 20:50:16,380 INFO sqlalchemy.engine.base.Engine {'param_1': 10}
+<Response 15 bytes [200 OK]>
+ImmutableMultiDict([])
+2021-01-16 20:50:16,382 INFO sqlalchemy.engine.base.Engine ROLLBACK
+[pid: 20043|app: 0|req: 9/20] 58.247.212.141 () {34 vars in 632 bytes} [Sat Jan 16 20:50:16 2021] GET /article/love?article_id=10&tag=0 => generated 15 bytes in 12 msecs (HTTP/1.1 200) 3 headers in 156 bytes (1 switches on core 8)
+before_first_request1: /user/check_phone
+2021-01-16 20:50:22,200 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2021-01-16 20:50:22,200 INFO sqlalchemy.engine.base.Engine SELECT user.id AS user_id, user.username AS user_username, user.password AS user_password, user.phone AS user_phone, user.email AS user_email, user.icon AS user_icon, user.is_delete AS user_is_delete, user.register_time AS user_register_time 
+FROM user 
+WHERE user.phone = %(phone_1)s
+2021-01-16 20:50:22,200 INFO sqlalchemy.engine.base.Engine {'phone_1': '17373431826'}
+<Response 68 bytes [200 OK]>
+ImmutableMultiDict([])
+2021-01-16 20:50:22,202 INFO sqlalchemy.engine.base.Engine ROLLBACK
+[pid: 20043|app: 0|req: 10/21] 43.250.201.49 () {38 vars in 675 bytes} [Sat Jan 16 20:50:22 2021] GET /user/check_phone?phone=17373431826 => generated 68 bytes in 5 msecs (HTTP/1.1 200) 3 headers in 156 bytes (1 switches on core 9)
+before_first_request1: /user/register
+2021-01-16 20:50:28,215 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2021-01-16 20:50:28,216 INFO sqlalchemy.engine.base.Engine INSERT INTO user (username, password, phone, email, icon, is_delete, register_time) VALUES (%(username)s, %(password)s, %(phone)s, %(email)s, %(icon)s, %(is_delete)s, %(register_time)s)
+2021-01-16 20:50:28,216 INFO sqlalchemy.engine.base.Engine {'username': '社会民', 'password': 'bbb927e2274a2541c2ba9d07bddaef22', 'phone': '17373431826', 'email': 'laonanren@qq.com', 'icon': None, 'is_delete': 0, 'register_time': datetime.datetime(2021, 1, 16, 20, 50, 28, 216648)}
+2021-01-16 20:50:28,218 INFO sqlalchemy.engine.base.Engine COMMIT
+<Response 229 bytes [302 FOUND]>
+ImmutableMultiDict([('username', 'AKW')])
+[pid: 20041|app: 0|req: 11/22] 43.250.201.49 () {48 vars in 931 bytes} [Sat Jan 16 20:50:28 2021] POST /user/register => generated 229 bytes in 8 msecs (HTTP/1.1 302) 4 headers in 216 bytes (1 switches on core 0)
+before_first_request1: /user/login
+<Response 8087 bytes [200 OK]>
+ImmutableMultiDict([('username', 'AKW')])
+[pid: 20041|app: 0|req: 12/23] 43.250.201.49 () {42 vars in 814 bytes} [Sat Jan 16 20:50:28 2021] GET /user/login => generated 8087 bytes in 8 msecs (HTTP/1.1 200) 3 headers in 166 bytes (1 switches on core 1)
+before_first_request1: /user/login
+2021-01-16 20:50:42,856 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2021-01-16 20:50:42,857 INFO sqlalchemy.engine.base.Engine SELECT user.id AS user_id, user.username AS user_username, user.password AS user_password, user.phone AS user_phone, user.email AS user_email, user.icon AS user_icon, user.is_delete AS user_is_delete, user.register_time AS user_register_time 
+FROM user 
+WHERE user.username = %(username_1)s AND user.password = %(password_1)s
+2021-01-16 20:50:42,857 INFO sqlalchemy.engine.base.Engine {'username_1': '社会民', 'password_1': 'bbb927e2274a2541c2ba9d07bddaef22'}
+session: <SecureCookieSession {'user_id': 5}>
+<Response 219 bytes [302 FOUND]>
+ImmutableMultiDict([('username', 'AKW')])
+2021-01-16 20:50:42,860 INFO sqlalchemy.engine.base.Engine ROLLBACK
+[pid: 20041|app: 0|req: 13/24] 43.250.201.49 () {48 vars in 928 bytes} [Sat Jan 16 20:50:42 2021] POST /user/login?f=1 => generated 219 bytes in 6 msecs (HTTP/1.1 302) 6 headers in 318 bytes (1 switches on core 2)
+before_first_request1: /user/
+ImmutableMultiDict([('username', 'AKW'), ('session', 'eyJ1c2VyX2lkIjo1fQ.YALhIg.rWtq755eoc4s7OZ-H_UX7W4r6Y8')])
+session: <SecureCookieSession {'user_id': 5}>
+5
+2021-01-16 20:50:42,921 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2021-01-16 20:50:42,922 INFO sqlalchemy.engine.base.Engine SELECT article.id AS article_id, article.title AS article_title, article.content AS article_content, article.publish_date AS article_publish_date, article.click_num AS article_click_num, article.save_num AS article_save_num, article.love_num AS article_love_num, article.user_id AS article_user_id, article.type_id AS article_type_id 
+FROM article ORDER BY -article.publish_date 
+ LIMIT %(param_1)s, %(param_2)s
+2021-01-16 20:50:42,922 INFO sqlalchemy.engine.base.Engine {'param_1': 0, 'param_2': 3}
+2021-01-16 20:50:42,928 INFO sqlalchemy.engine.base.Engine SELECT count(*) AS count_1 
+FROM (SELECT article.id AS article_id, article.title AS article_title, article.content AS article_content, article.publish_date AS article_publish_date, article.click_num AS article_click_num, article.save_num AS article_save_num, article.love_num AS article_love_num, article.user_id AS article_user_id, article.type_id AS article_type_id 
+FROM article) AS anon_1
+2021-01-16 20:50:42,928 INFO sqlalchemy.engine.base.Engine {}
+[<Article 10>, <Article 8>, <Article 7>]
+1
+None
+2
+True
+False
+3
+9
+2021-01-16 20:50:42,930 INFO sqlalchemy.engine.base.Engine SELECT article_type.id AS article_type_id, article_type.type_name AS article_type_type_name 
+FROM article_type
+2021-01-16 20:50:42,930 INFO sqlalchemy.engine.base.Engine {}
+2021-01-16 20:50:42,931 INFO sqlalchemy.engine.base.Engine SELECT user.id AS user_id, user.username AS user_username, user.password AS user_password, user.phone AS user_phone, user.email AS user_email, user.icon AS user_icon, user.is_delete AS user_is_delete, user.register_time AS user_register_time 
+FROM user 
+WHERE user.id = %(param_1)s
+2021-01-16 20:50:42,931 INFO sqlalchemy.engine.base.Engine {'param_1': 5}
+2021-01-16 20:50:42,934 INFO sqlalchemy.engine.base.Engine SELECT user.id AS user_id, user.username AS user_username, user.password AS user_password, user.phone AS user_phone, user.email AS user_email, user.icon AS user_icon, user.is_delete AS user_is_delete, user.register_time AS user_register_time 
+FROM user 
+WHERE user.id = %(param_1)s
+2021-01-16 20:50:42,934 INFO sqlalchemy.engine.base.Engine {'param_1': 4}
+2021-01-16 20:50:42,935 INFO sqlalchemy.engine.base.Engine SELECT user.id AS user_id, user.username AS user_username, user.password AS user_password, user.phone AS user_phone, user.email AS user_email, user.icon AS user_icon, user.is_delete AS user_is_delete, user.register_time AS user_register_time 
+FROM user 
+WHERE user.id = %(param_1)s
+2021-01-16 20:50:42,935 INFO sqlalchemy.engine.base.Engine {'param_1': 1}
+<Response 8165 bytes [200 OK]>
+ImmutableMultiDict([('username', 'AKW'), ('session', 'eyJ1c2VyX2lkIjo1fQ.YALhIg.rWtq755eoc4s7OZ-H_UX7W4r6Y8')])
+2021-01-16 20:50:42,937 INFO sqlalchemy.engine.base.Engine ROLLBACK
+[pid: 20041|app: 0|req: 14/25] 43.250.201.49 () {42 vars in 864 bytes} [Sat Jan 16 20:50:42 2021] GET /user/ => generated 8165 bytes in 19 msecs (HTTP/1.1 200) 4 headers in 180 bytes (1 switches on core 3)
+before_first_request1: /img/Erha.jpg
+<Response streamed [200 OK]>
+ImmutableMultiDict([('username', 'AKW'), ('session', 'eyJ1c2VyX2lkIjo1fQ.YALhIg.rWtq755eoc4s7OZ-H_UX7W4r6Y8')])
+[pid: 20041|app: 0|req: 15/26] 43.250.201.49 () {38 vars in 736 bytes} [Sat Jan 16 20:50:43 2021] GET /img/Erha.jpg => generated 60584 bytes in 2 msecs via sendfile() (HTTP/1.1 200) 8 headers in 353 bytes (0 switches on core 4)
+before_app_first_request
+before_first_request1: /user/center
+需要验证用户的登录情况
+5
+2021-01-16 20:50:53,445 INFO sqlalchemy.engine.base.Engine SHOW VARIABLES LIKE 'sql_mode'
+2021-01-16 20:50:53,445 INFO sqlalchemy.engine.base.Engine {}
+2021-01-16 20:50:53,448 INFO sqlalchemy.engine.base.Engine SHOW VARIABLES LIKE 'lower_case_table_names'
+2021-01-16 20:50:53,448 INFO sqlalchemy.engine.base.Engine {}
+2021-01-16 20:50:53,450 INFO sqlalchemy.engine.base.Engine SELECT DATABASE()
+2021-01-16 20:50:53,450 INFO sqlalchemy.engine.base.Engine {}
+2021-01-16 20:50:53,450 INFO sqlalchemy.engine.base.Engine show collation where `Charset` = 'utf8mb4' and `Collation` = 'utf8mb4_bin'
+2021-01-16 20:50:53,451 INFO sqlalchemy.engine.base.Engine {}
+2021-01-16 20:50:53,452 INFO sqlalchemy.engine.base.Engine SELECT CAST('test plain returns' AS CHAR(60)) AS anon_1
+2021-01-16 20:50:53,452 INFO sqlalchemy.engine.base.Engine {}
+2021-01-16 20:50:53,453 INFO sqlalchemy.engine.base.Engine SELECT CAST('test unicode returns' AS CHAR(60)) AS anon_1
+2021-01-16 20:50:53,453 INFO sqlalchemy.engine.base.Engine {}
+2021-01-16 20:50:53,454 INFO sqlalchemy.engine.base.Engine SELECT CAST('test collated returns' AS CHAR CHARACTER SET utf8mb4) COLLATE utf8mb4_bin AS anon_1
+2021-01-16 20:50:53,454 INFO sqlalchemy.engine.base.Engine {}
+2021-01-16 20:50:53,454 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2021-01-16 20:50:53,456 INFO sqlalchemy.engine.base.Engine SELECT user.id AS user_id, user.username AS user_username, user.password AS user_password, user.phone AS user_phone, user.email AS user_email, user.icon AS user_icon, user.is_delete AS user_is_delete, user.register_time AS user_register_time 
+FROM user 
+WHERE user.id = %(param_1)s
+2021-01-16 20:50:53,456 INFO sqlalchemy.engine.base.Engine {'param_1': 5}
+g: <flask.g of 'apps'>
+2021-01-16 20:50:53,458 INFO sqlalchemy.engine.base.Engine SELECT article_type.id AS article_type_id, article_type.type_name AS article_type_type_name 
+FROM article_type
+2021-01-16 20:50:53,458 INFO sqlalchemy.engine.base.Engine {}
+2021-01-16 20:50:53,460 INFO sqlalchemy.engine.base.Engine SELECT photo.id AS photo_id, photo.photo_name AS photo_photo_name, photo.photo_datetime AS photo_photo_datetime, photo.user_id AS photo_user_id 
+FROM photo 
+WHERE photo.user_id = %(user_id_1)s
+2021-01-16 20:50:53,460 INFO sqlalchemy.engine.base.Engine {'user_id_1': 5}
+2021-01-16 20:50:53,505 INFO sqlalchemy.engine.base.Engine SELECT message_board.id AS message_board_id, message_board.content AS message_board_content, message_board.mdatetime AS message_board_mdatetime, message_board.user_id AS message_board_user_id 
+FROM message_board 
+WHERE %(param_1)s = message_board.user_id
+2021-01-16 20:50:53,505 INFO sqlalchemy.engine.base.Engine {'param_1': 5}
+<Response 11235 bytes [200 OK]>
+ImmutableMultiDict([('username', 'AKW'), ('session', 'eyJ1c2VyX2lkIjo1fQ.YALhIg.rWtq755eoc4s7OZ-H_UX7W4r6Y8')])
+2021-01-16 20:50:53,507 INFO sqlalchemy.engine.base.Engine ROLLBACK
+[pid: 20044|app: 0|req: 1/27] 43.250.201.49 () {40 vars in 840 bytes} [Sat Jan 16 20:50:53 2021] GET /user/center => generated 11235 bytes in 108 msecs (HTTP/1.1 200) 4 headers in 181 bytes (1 switches on core 0)
+before_first_request1: /css/center.css
+<Response streamed [200 OK]>
+ImmutableMultiDict([('username', 'AKW'), ('session', 'eyJ1c2VyX2lkIjo1fQ.YALhIg.rWtq755eoc4s7OZ-H_UX7W4r6Y8')])
+[pid: 20041|app: 0|req: 16/28] 43.250.201.49 () {38 vars in 700 bytes} [Sat Jan 16 20:50:53 2021] GET /css/center.css => generated 951 bytes in 2 msecs via sendfile() (HTTP/1.1 200) 8 headers in 362 bytes (0 switches on core 5)
+before_first_request1: /tinymce/tinymce.min.js
+<Response streamed [200 OK]>
+ImmutableMultiDict([('username', 'AKW'), ('session', 'eyJ1c2VyX2lkIjo1fQ.YALhIg.rWtq755eoc4s7OZ-H_UX7W4r6Y8')])
+[pid: 20043|app: 0|req: 11/29] 43.250.201.49 () {38 vars in 701 bytes} [Sat Jan 16 20:50:53 2021] GET /tinymce/tinymce.min.js => generated 387084 bytes in 2 msecs via sendfile() (HTTP/1.1 200) 8 headers in 381 bytes (0 switches on core 0)
+before_first_request1: /tinymce/themes/silver/theme.min.js
+<Response streamed [200 OK]>
+ImmutableMultiDict([('username', 'AKW'), ('session', 'eyJ1c2VyX2lkIjo1fQ.YALhIg.rWtq755eoc4s7OZ-H_UX7W4r6Y8')])
+[pid: 20041|app: 0|req: 17/30] 43.250.201.49 () {38 vars in 725 bytes} [Sat Jan 16 20:50:56 2021] GET /tinymce/themes/silver/theme.min.js => generated 406264 bytes in 1 msecs via sendfile() (HTTP/1.1 200) 8 headers in 381 bytes (0 switches on core 6)
+before_first_request1: /tinymce/plugins/quickbars/plugin.min.js
+<Response streamed [200 OK]>
+ImmutableMultiDict([('username', 'AKW'), ('session', 'eyJ1c2VyX2lkIjo1fQ.YALhIg.rWtq755eoc4s7OZ-H_UX7W4r6Y8')])
+[pid: 20041|app: 0|req: 18/31] 43.250.201.49 () {38 vars in 735 bytes} [Sat Jan 16 20:50:58 2021] GET /tinymce/plugins/quickbars/plugin.min.js => generated 6534 bytes in 1 msecs via sendfile() (HTTP/1.1 200) 8 headers in 378 bytes (0 switches on core 7)
+before_first_request1: /tinymce/icons/default/icons.min.js
+<Response streamed [200 OK]>
+ImmutableMultiDict([('username', 'AKW'), ('session', 'eyJ1c2VyX2lkIjo1fQ.YALhIg.rWtq755eoc4s7OZ-H_UX7W4r6Y8')])
+[pid: 20043|app: 0|req: 12/32] 43.250.201.49 () {38 vars in 725 bytes} [Sat Jan 16 20:50:58 2021] GET /tinymce/icons/default/icons.min.js => generated 56317 bytes in 1 msecs via sendfile() (HTTP/1.1 200) 8 headers in 379 bytes (0 switches on core 1)
+before_first_request1: /tinymce/plugins/emoticons/plugin.min.js
+<Response streamed [200 OK]>
+ImmutableMultiDict([('username', 'AKW'), ('session', 'eyJ1c2VyX2lkIjo1fQ.YALhIg.rWtq755eoc4s7OZ-H_UX7W4r6Y8')])
+[pid: 20044|app: 0|req: 2/33] 43.250.201.49 () {38 vars in 735 bytes} [Sat Jan 16 20:50:58 2021] GET /tinymce/plugins/emoticons/plugin.min.js => generated 6556 bytes in 2 msecs via sendfile() (HTTP/1.1 200) 8 headers in 378 bytes (0 switches on core 1)
+before_first_request1: /tinymce/skins/ui/oxide/skin.min.css
+<Response streamed [200 OK]>
+ImmutableMultiDict([('username', 'AKW'), ('session', 'eyJ1c2VyX2lkIjo1fQ.YALhIg.rWtq755eoc4s7OZ-H_UX7W4r6Y8')])
+[pid: 20041|app: 0|req: 19/34] 43.250.201.49 () {38 vars in 742 bytes} [Sat Jan 16 20:50:59 2021] GET /tinymce/skins/ui/oxide/skin.min.css => generated 57129 bytes in 2 msecs via sendfile() (HTTP/1.1 200) 8 headers in 366 bytes (0 switches on core 7)
+before_first_request1: /tinymce/skins/ui/oxide/content.min.css
+<Response streamed [200 OK]>
+ImmutableMultiDict([('username', 'AKW'), ('session', 'eyJ1c2VyX2lkIjo1fQ.YALhIg.rWtq755eoc4s7OZ-H_UX7W4r6Y8')])
+[pid: 20041|app: 0|req: 20/35] 43.250.201.49 () {38 vars in 748 bytes} [Sat Jan 16 20:50:59 2021] GET /tinymce/skins/ui/oxide/content.min.css => generated 20717 bytes in 1 msecs via sendfile() (HTTP/1.1 200) 8 headers in 366 bytes (0 switches on core 9)
+before_first_request1: /tinymce/skins/content/default/content.min.css
+<Response streamed [200 OK]>
+ImmutableMultiDict([('username', 'AKW'), ('session', 'eyJ1c2VyX2lkIjo1fQ.YALhIg.rWtq755eoc4s7OZ-H_UX7W4r6Y8')])
+[pid: 20044|app: 0|req: 3/36] 43.250.201.49 () {38 vars in 762 bytes} [Sat Jan 16 20:50:59 2021] GET /tinymce/skins/content/default/content.min.css => generated 957 bytes in 1 msecs via sendfile() (HTTP/1.1 200) 8 headers in 362 bytes (0 switches on core 2)
+before_first_request1: /tinymce/plugins/emoticons/js/emojis.min.js
+<Response streamed [200 OK]>
+ImmutableMultiDict([('username', 'AKW'), ('session', 'eyJ1c2VyX2lkIjo1fQ.YALhIg.rWtq755eoc4s7OZ-H_UX7W4r6Y8')])
+[pid: 20044|app: 0|req: 4/37] 43.250.201.49 () {38 vars in 741 bytes} [Sat Jan 16 20:51:00 2021] GET /tinymce/plugins/emoticons/js/emojis.min.js => generated 193222 bytes in 2 msecs via sendfile() (HTTP/1.1 200) 8 headers in 381 bytes (0 switches on core 3)
+before_first_request1: /user/logout
+Traceback (most recent call last):
+  File "/root/.virtualenvs/myblog/lib/python3.6/site-packages/flask/app.py", line 2464, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/root/.virtualenvs/myblog/lib/python3.6/site-packages/flask/app.py", line 2450, in wsgi_app
+    response = self.handle_exception(e)
+  File "/root/.virtualenvs/myblog/lib/python3.6/site-packages/flask/app.py", line 1867, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/root/.virtualenvs/myblog/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/root/.virtualenvs/myblog/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/.virtualenvs/myblog/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/.virtualenvs/myblog/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/root/.virtualenvs/myblog/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/root/.virtualenvs/myblog/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/.virtualenvs/myblog/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "./apps/users/views.py", line 211, in logout
+    del session['user_id']  # 指回删除session中的这个键值对  不会删除session空间和cookie
+  File "/root/.virtualenvs/myblog/lib/python3.6/site-packages/werkzeug/local.py", line 353, in __delitem__
+    del self._get_current_object()[key]
+  File "/root/.virtualenvs/myblog/lib/python3.6/site-packages/werkzeug/datastructures.py", line 251, in oncall
+    rv = getattr(super(UpdateDictMixin, self), name)(*args, **kw)
+KeyError: 'user_id'
+[pid: 20044|app: 0|req: 5/38] 58.246.221.162 () {34 vars in 591 bytes} [Sat Jan 16 20:51:11 2021] GET /user/logout => generated 0 bytes in 9 msecs (HTTP/1.1 500) 0 headers in 0 bytes (0 switches on core 4)
+before_first_request1: /user/check_phone
+2021-01-16 20:51:24,543 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2021-01-16 20:51:24,544 INFO sqlalchemy.engine.base.Engine SELECT user.id AS user_id, user.username AS user_username, user.password AS user_password, user.phone AS user_phone, user.email AS user_email, user.icon AS user_icon, user.is_delete AS user_is_delete, user.register_time AS user_register_time 
+FROM user 
+WHERE user.phone = %(phone_1)s
+2021-01-16 20:51:24,544 INFO sqlalchemy.engine.base.Engine {'phone_1': '17373431826'}
+<Response 86 bytes [200 OK]>
+ImmutableMultiDict([])
+2021-01-16 20:51:24,546 INFO sqlalchemy.engine.base.Engine ROLLBACK
+[pid: 20044|app: 0|req: 6/39] 223.167.152.53 () {34 vars in 665 bytes} [Sat Jan 16 20:51:24 2021] GET /user/check_phone?phone=17373431826 => generated 86 bytes in 6 msecs (HTTP/1.1 200) 3 headers in 156 bytes (1 switches on core 5)
+before_first_request1: /user/login
+<Response 8087 bytes [200 OK]>
+ImmutableMultiDict([])
+[pid: 20044|app: 0|req: 7/40] 58.246.221.163 () {34 vars in 618 bytes} [Sat Jan 16 20:51:37 2021] GET /user/login => generated 8087 bytes in 20 msecs (HTTP/1.1 200) 3 headers in 166 bytes (1 switches on core 6)
+before_first_request1: /user/center
+需要验证用户的登录情况
+None
+<Response 8087 bytes [200 OK]>
+ImmutableMultiDict([])
+[pid: 20044|app: 0|req: 8/41] 223.166.151.197 () {34 vars in 532 bytes} [Sat Jan 16 20:51:58 2021] GET /user/center => generated 8087 bytes in 2 msecs (HTTP/1.1 200) 3 headers in 166 bytes (1 switches on core 7)
+before_first_request1: /user/center
+需要验证用户的登录情况
+5
+2021-01-16 20:53:11,154 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2021-01-16 20:53:11,155 INFO sqlalchemy.engine.base.Engine SELECT user.id AS user_id, user.username AS user_username, user.password AS user_password, user.phone AS user_phone, user.email AS user_email, user.icon AS user_icon, user.is_delete AS user_is_delete, user.register_time AS user_register_time 
+FROM user 
+WHERE user.id = %(param_1)s
+2021-01-16 20:53:11,155 INFO sqlalchemy.engine.base.Engine {'param_1': 5}
+g: <flask.g of 'apps'>
+2021-01-16 20:53:11,157 INFO sqlalchemy.engine.base.Engine SELECT article_type.id AS article_type_id, article_type.type_name AS article_type_type_name 
+FROM article_type
+2021-01-16 20:53:11,157 INFO sqlalchemy.engine.base.Engine {}
+2021-01-16 20:53:11,158 INFO sqlalchemy.engine.base.Engine SELECT photo.id AS photo_id, photo.photo_name AS photo_photo_name, photo.photo_datetime AS photo_photo_datetime, photo.user_id AS photo_user_id 
+FROM photo 
+WHERE photo.user_id = %(user_id_1)s
+2021-01-16 20:53:11,159 INFO sqlalchemy.engine.base.Engine {'user_id_1': 5}
+2021-01-16 20:53:11,161 INFO sqlalchemy.engine.base.Engine SELECT message_board.id AS message_board_id, message_board.content AS message_board_content, message_board.mdatetime AS message_board_mdatetime, message_board.user_id AS message_board_user_id 
+FROM message_board 
+WHERE %(param_1)s = message_board.user_id
+2021-01-16 20:53:11,161 INFO sqlalchemy.engine.base.Engine {'param_1': 5}
+<Response 11235 bytes [200 OK]>
+ImmutableMultiDict([('session', 'eyJ1c2VyX2lkIjo1fQ.YALhIg.rWtq755eoc4s7OZ-H_UX7W4r6Y8')])
+2021-01-16 20:53:11,163 INFO sqlalchemy.engine.base.Engine ROLLBACK
+[pid: 20044|app: 0|req: 9/42] 43.250.201.49 () {40 vars in 810 bytes} [Sat Jan 16 20:53:11 2021] GET /user/center => generated 11235 bytes in 10 msecs (HTTP/1.1 200) 4 headers in 181 bytes (1 switches on core 8)
+before_first_request1: /user/myphoto
+referer: http://47.100.13.219:8080/user/center
+2021-01-16 20:53:18,655 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2021-01-16 20:53:18,655 INFO sqlalchemy.engine.base.Engine SELECT photo.id AS photo_id, photo.photo_name AS photo_photo_name, photo.photo_datetime AS photo_photo_datetime, photo.user_id AS photo_user_id 
+FROM photo 
+ LIMIT %(param_1)s, %(param_2)s
+2021-01-16 20:53:18,655 INFO sqlalchemy.engine.base.Engine {'param_1': 0, 'param_2': 3}
+2021-01-16 20:53:18,665 INFO sqlalchemy.engine.base.Engine SELECT count(*) AS count_1 
+FROM (SELECT photo.id AS photo_id, photo.photo_name AS photo_photo_name, photo.photo_datetime AS photo_photo_datetime, photo.user_id AS photo_user_id 
+FROM photo) AS anon_1
+2021-01-16 20:53:18,665 INFO sqlalchemy.engine.base.Engine {}
+2021-01-16 20:53:18,670 INFO sqlalchemy.engine.base.Engine SELECT user.id AS user_id, user.username AS user_username, user.password AS user_password, user.phone AS user_phone, user.email AS user_email, user.icon AS user_icon, user.is_delete AS user_is_delete, user.register_time AS user_register_time 
+FROM user 
+WHERE user.id = %(param_1)s
+2021-01-16 20:53:18,670 INFO sqlalchemy.engine.base.Engine {'param_1': 5}
+2021-01-16 20:53:18,672 INFO sqlalchemy.engine.base.Engine SELECT article_type.id AS article_type_id, article_type.type_name AS article_type_type_name 
+FROM article_type
+2021-01-16 20:53:18,672 INFO sqlalchemy.engine.base.Engine {}
+<Response 6052 bytes [200 OK]>
+ImmutableMultiDict([('session', 'eyJ1c2VyX2lkIjo1fQ.YALhIg.rWtq755eoc4s7OZ-H_UX7W4r6Y8'), ('username', 'AKW')])
+2021-01-16 20:53:18,682 INFO sqlalchemy.engine.base.Engine ROLLBACK
+[pid: 20044|app: 0|req: 10/43] 43.250.201.49 () {40 vars in 848 bytes} [Sat Jan 16 20:53:18 2021] GET /user/myphoto => generated 6052 bytes in 29 msecs (HTTP/1.1 200) 4 headers in 180 bytes (1 switches on core 9)
+before_first_request1: /user/board
+2021-01-16 20:53:24,371 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2021-01-16 20:53:24,372 INFO sqlalchemy.engine.base.Engine SELECT message_board.id AS message_board_id, message_board.content AS message_board_content, message_board.mdatetime AS message_board_mdatetime, message_board.user_id AS message_board_user_id 
+FROM message_board ORDER BY -message_board.mdatetime 
+ LIMIT %(param_1)s, %(param_2)s
+2021-01-16 20:53:24,372 INFO sqlalchemy.engine.base.Engine {'param_1': 0, 'param_2': 5}
+2021-01-16 20:53:24,376 INFO sqlalchemy.engine.base.Engine SELECT count(*) AS count_1 
+FROM (SELECT message_board.id AS message_board_id, message_board.content AS message_board_content, message_board.mdatetime AS message_board_mdatetime, message_board.user_id AS message_board_user_id 
+FROM message_board) AS anon_1
+2021-01-16 20:53:24,376 INFO sqlalchemy.engine.base.Engine {}
+2021-01-16 20:53:24,383 INFO sqlalchemy.engine.base.Engine SELECT user.id AS user_id, user.username AS user_username, user.password AS user_password, user.phone AS user_phone, user.email AS user_email, user.icon AS user_icon, user.is_delete AS user_is_delete, user.register_time AS user_register_time 
+FROM user 
+WHERE user.id = %(param_1)s
+2021-01-16 20:53:24,383 INFO sqlalchemy.engine.base.Engine {'param_1': 5}
+2021-01-16 20:53:24,386 INFO sqlalchemy.engine.base.Engine SELECT article_type.id AS article_type_id, article_type.type_name AS article_type_type_name 
+FROM article_type
+2021-01-16 20:53:24,386 INFO sqlalchemy.engine.base.Engine {}
+2021-01-16 20:53:24,402 INFO sqlalchemy.engine.base.Engine SELECT user.id AS user_id, user.username AS user_username, user.password AS user_password, user.phone AS user_phone, user.email AS user_email, user.icon AS user_icon, user.is_delete AS user_is_delete, user.register_time AS user_register_time 
+FROM user 
+WHERE user.id = %(param_1)s
+2021-01-16 20:53:24,403 INFO sqlalchemy.engine.base.Engine {'param_1': 4}
+2021-01-16 20:53:24,404 INFO sqlalchemy.engine.base.Engine SELECT user.id AS user_id, user.username AS user_username, user.password AS user_password, user.phone AS user_phone, user.email AS user_email, user.icon AS user_icon, user.is_delete AS user_is_delete, user.register_time AS user_register_time 
+FROM user 
+WHERE user.id = %(param_1)s
+2021-01-16 20:53:24,404 INFO sqlalchemy.engine.base.Engine {'param_1': 1}
+<Response 12280 bytes [200 OK]>
+ImmutableMultiDict([('session', 'eyJ1c2VyX2lkIjo1fQ.YALhIg.rWtq755eoc4s7OZ-H_UX7W4r6Y8'), ('username', 'AKW')])
+2021-01-16 20:53:24,406 INFO sqlalchemy.engine.base.Engine ROLLBACK
+[pid: 20043|app: 0|req: 13/44] 43.250.201.49 () {40 vars in 845 bytes} [Sat Jan 16 20:53:24 2021] GET /user/board => generated 12280 bytes in 38 msecs (HTTP/1.1 200) 4 headers in 181 bytes (1 switches on core 1)
+before_first_request1: /upload/icon/3.jpg
+<Response streamed [200 OK]>
+ImmutableMultiDict([('session', 'eyJ1c2VyX2lkIjo1fQ.YALhIg.rWtq755eoc4s7OZ-H_UX7W4r6Y8'), ('username', 'AKW')])
+[pid: 20043|app: 0|req: 14/45] 43.250.201.49 () {38 vars in 751 bytes} [Sat Jan 16 20:53:25 2021] GET /upload/icon/3.jpg => generated 4195 bytes in 1 msecs via sendfile() (HTTP/1.1 200) 8 headers in 351 bytes (0 switches on core 3)
+before_first_request1: /user/board
+2021-01-16 20:53:28,754 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2021-01-16 20:53:28,754 INFO sqlalchemy.engine.base.Engine SELECT message_board.id AS message_board_id, message_board.content AS message_board_content, message_board.mdatetime AS message_board_mdatetime, message_board.user_id AS message_board_user_id 
+FROM message_board ORDER BY -message_board.mdatetime 
+ LIMIT %(param_1)s, %(param_2)s
+2021-01-16 20:53:28,754 INFO sqlalchemy.engine.base.Engine {'param_1': 0, 'param_2': 5}
+2021-01-16 20:53:28,762 INFO sqlalchemy.engine.base.Engine SELECT count(*) AS count_1 
+FROM (SELECT message_board.id AS message_board_id, message_board.content AS message_board_content, message_board.mdatetime AS message_board_mdatetime, message_board.user_id AS message_board_user_id 
+FROM message_board) AS anon_1
+2021-01-16 20:53:28,762 INFO sqlalchemy.engine.base.Engine {}
+2021-01-16 20:53:28,768 INFO sqlalchemy.engine.base.Engine SELECT user.id AS user_id, user.username AS user_username, user.password AS user_password, user.phone AS user_phone, user.email AS user_email, user.icon AS user_icon, user.is_delete AS user_is_delete, user.register_time AS user_register_time 
+FROM user 
+WHERE user.id = %(param_1)s
+2021-01-16 20:53:28,768 INFO sqlalchemy.engine.base.Engine {'param_1': 5}
+2021-01-16 20:53:28,770 INFO sqlalchemy.engine.base.Engine SELECT article_type.id AS article_type_id, article_type.type_name AS article_type_type_name 
+FROM article_type
+2021-01-16 20:53:28,770 INFO sqlalchemy.engine.base.Engine {}
+2021-01-16 20:53:28,784 INFO sqlalchemy.engine.base.Engine SELECT user.id AS user_id, user.username AS user_username, user.password AS user_password, user.phone AS user_phone, user.email AS user_email, user.icon AS user_icon, user.is_delete AS user_is_delete, user.register_time AS user_register_time 
+FROM user 
+WHERE user.id = %(param_1)s
+2021-01-16 20:53:28,785 INFO sqlalchemy.engine.base.Engine {'param_1': 4}
+2021-01-16 20:53:28,787 INFO sqlalchemy.engine.base.Engine SELECT user.id AS user_id, user.username AS user_username, user.password AS user_password, user.phone AS user_phone, user.email AS user_email, user.icon AS user_icon, user.is_delete AS user_is_delete, user.register_time AS user_register_time 
+FROM user 
+WHERE user.id = %(param_1)s
+2021-01-16 20:53:28,787 INFO sqlalchemy.engine.base.Engine {'param_1': 1}
+<Response 12280 bytes [200 OK]>
+ImmutableMultiDict([('session', 'eyJ1c2VyX2lkIjo1fQ.YALhIg.rWtq755eoc4s7OZ-H_UX7W4r6Y8'), ('username', 'AKW')])
+2021-01-16 20:53:28,788 INFO sqlalchemy.engine.base.Engine ROLLBACK
+[pid: 20044|app: 0|req: 11/46] 43.250.201.49 () {40 vars in 843 bytes} [Sat Jan 16 20:53:28 2021] GET /user/board => generated 12280 bytes in 37 msecs (HTTP/1.1 200) 4 headers in 181 bytes (1 switches on core 0)
+before_first_request1: /user/board
+2021-01-16 20:53:35,520 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2021-01-16 20:53:35,520 INFO sqlalchemy.engine.base.Engine SELECT message_board.id AS message_board_id, message_board.content AS message_board_content, message_board.mdatetime AS message_board_mdatetime, message_board.user_id AS message_board_user_id 
+FROM message_board ORDER BY -message_board.mdatetime 
+ LIMIT %(param_1)s, %(param_2)s
+2021-01-16 20:53:35,520 INFO sqlalchemy.engine.base.Engine {'param_1': 5, 'param_2': 5}
+2021-01-16 20:53:35,524 INFO sqlalchemy.engine.base.Engine SELECT count(*) AS count_1 
+FROM (SELECT message_board.id AS message_board_id, message_board.content AS message_board_content, message_board.mdatetime AS message_board_mdatetime, message_board.user_id AS message_board_user_id 
+FROM message_board) AS anon_1
+2021-01-16 20:53:35,524 INFO sqlalchemy.engine.base.Engine {}
+2021-01-16 20:53:35,525 INFO sqlalchemy.engine.base.Engine SELECT user.id AS user_id, user.username AS user_username, user.password AS user_password, user.phone AS user_phone, user.email AS user_email, user.icon AS user_icon, user.is_delete AS user_is_delete, user.register_time AS user_register_time 
+FROM user 
+WHERE user.id = %(param_1)s
+2021-01-16 20:53:35,525 INFO sqlalchemy.engine.base.Engine {'param_1': 5}
+2021-01-16 20:53:35,527 INFO sqlalchemy.engine.base.Engine SELECT article_type.id AS article_type_id, article_type.type_name AS article_type_type_name 
+FROM article_type
+2021-01-16 20:53:35,527 INFO sqlalchemy.engine.base.Engine {}
+2021-01-16 20:53:35,529 INFO sqlalchemy.engine.base.Engine SELECT user.id AS user_id, user.username AS user_username, user.password AS user_password, user.phone AS user_phone, user.email AS user_email, user.icon AS user_icon, user.is_delete AS user_is_delete, user.register_time AS user_register_time 
+FROM user 
+WHERE user.id = %(param_1)s
+2021-01-16 20:53:35,529 INFO sqlalchemy.engine.base.Engine {'param_1': 1}
+<Response 8765 bytes [200 OK]>
+ImmutableMultiDict([('session', 'eyJ1c2VyX2lkIjo1fQ.YALhIg.rWtq755eoc4s7OZ-H_UX7W4r6Y8'), ('username', 'AKW')])
+2021-01-16 20:53:35,531 INFO sqlalchemy.engine.base.Engine ROLLBACK
+[pid: 20043|app: 0|req: 15/47] 43.250.201.49 () {40 vars in 856 bytes} [Sat Jan 16 20:53:35 2021] GET /user/board?page=2 => generated 8765 bytes in 13 msecs (HTTP/1.1 200) 4 headers in 180 bytes (1 switches on core 4)
+before_first_request1: /user/myphoto
+referer: http://47.100.13.219:8080/user/board?page=2
+2021-01-16 20:53:39,377 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2021-01-16 20:53:39,378 INFO sqlalchemy.engine.base.Engine SELECT photo.id AS photo_id, photo.photo_name AS photo_photo_name, photo.photo_datetime AS photo_photo_datetime, photo.user_id AS photo_user_id 
+FROM photo 
+ LIMIT %(param_1)s, %(param_2)s
+2021-01-16 20:53:39,378 INFO sqlalchemy.engine.base.Engine {'param_1': 0, 'param_2': 3}
+2021-01-16 20:53:39,381 INFO sqlalchemy.engine.base.Engine SELECT count(*) AS count_1 
+FROM (SELECT photo.id AS photo_id, photo.photo_name AS photo_photo_name, photo.photo_datetime AS photo_photo_datetime, photo.user_id AS photo_user_id 
+FROM photo) AS anon_1
+2021-01-16 20:53:39,382 INFO sqlalchemy.engine.base.Engine {}
+2021-01-16 20:53:39,383 INFO sqlalchemy.engine.base.Engine SELECT user.id AS user_id, user.username AS user_username, user.password AS user_password, user.phone AS user_phone, user.email AS user_email, user.icon AS user_icon, user.is_delete AS user_is_delete, user.register_time AS user_register_time 
+FROM user 
+WHERE user.id = %(param_1)s
+2021-01-16 20:53:39,383 INFO sqlalchemy.engine.base.Engine {'param_1': 5}
+2021-01-16 20:53:39,384 INFO sqlalchemy.engine.base.Engine SELECT article_type.id AS article_type_id, article_type.type_name AS article_type_type_name 
+FROM article_type
+2021-01-16 20:53:39,384 INFO sqlalchemy.engine.base.Engine {}
+<Response 6052 bytes [200 OK]>
+ImmutableMultiDict([('session', 'eyJ1c2VyX2lkIjo1fQ.YALhIg.rWtq755eoc4s7OZ-H_UX7W4r6Y8'), ('username', 'AKW')])
+2021-01-16 20:53:39,393 INFO sqlalchemy.engine.base.Engine ROLLBACK
+[pid: 20043|app: 0|req: 16/48] 43.250.201.49 () {40 vars in 854 bytes} [Sat Jan 16 20:53:39 2021] GET /user/myphoto => generated 6052 bytes in 18 msecs (HTTP/1.1 200) 4 headers in 180 bytes (1 switches on core 5)
+before_first_request1: /user/show_about
+需要验证用户的登录情况
+5
+2021-01-16 20:53:40,897 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2021-01-16 20:53:40,898 INFO sqlalchemy.engine.base.Engine SELECT user.id AS user_id, user.username AS user_username, user.password AS user_password, user.phone AS user_phone, user.email AS user_email, user.icon AS user_icon, user.is_delete AS user_is_delete, user.register_time AS user_register_time 
+FROM user 
+WHERE user.id = %(param_1)s
+2021-01-16 20:53:40,899 INFO sqlalchemy.engine.base.Engine {'param_1': 5}
+g: <flask.g of 'apps'>
+2021-01-16 20:53:40,901 INFO sqlalchemy.engine.base.Engine SELECT article_type.id AS article_type_id, article_type.type_name AS article_type_type_name 
+FROM article_type
+2021-01-16 20:53:40,901 INFO sqlalchemy.engine.base.Engine {}
+2021-01-16 20:53:40,909 INFO sqlalchemy.engine.base.Engine SELECT about_me.id AS about_me_id, about_me.content AS about_me_content, about_me.pdatetime AS about_me_pdatetime, about_me.user_id AS about_me_user_id 
+FROM about_me 
+WHERE %(param_1)s = about_me.user_id
+2021-01-16 20:53:40,910 INFO sqlalchemy.engine.base.Engine {'param_1': 5}
+<Response 5207 bytes [200 OK]>
+ImmutableMultiDict([('session', 'eyJ1c2VyX2lkIjo1fQ.YALhIg.rWtq755eoc4s7OZ-H_UX7W4r6Y8'), ('username', 'AKW')])
+2021-01-16 20:53:40,911 INFO sqlalchemy.engine.base.Engine ROLLBACK
+[pid: 20043|app: 0|req: 17/49] 43.250.201.49 () {40 vars in 855 bytes} [Sat Jan 16 20:53:40 2021] GET /user/show_about => generated 5207 bytes in 17 msecs (HTTP/1.1 200) 4 headers in 180 bytes (1 switches on core 6)
+before_first_request1: /user/
+ImmutableMultiDict([('session', 'eyJ1c2VyX2lkIjo1fQ.YALhIg.rWtq755eoc4s7OZ-H_UX7W4r6Y8'), ('username', 'AKW')])
+session: <SecureCookieSession {'user_id': 5}>
+5
+2021-01-16 20:53:42,723 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2021-01-16 20:53:42,723 INFO sqlalchemy.engine.base.Engine SELECT article.id AS article_id, article.title AS article_title, article.content AS article_content, article.publish_date AS article_publish_date, article.click_num AS article_click_num, article.save_num AS article_save_num, article.love_num AS article_love_num, article.user_id AS article_user_id, article.type_id AS article_type_id 
+FROM article ORDER BY -article.publish_date 
+ LIMIT %(param_1)s, %(param_2)s
+2021-01-16 20:53:42,723 INFO sqlalchemy.engine.base.Engine {'param_1': 0, 'param_2': 3}
+2021-01-16 20:53:42,729 INFO sqlalchemy.engine.base.Engine SELECT count(*) AS count_1 
+FROM (SELECT article.id AS article_id, article.title AS article_title, article.content AS article_content, article.publish_date AS article_publish_date, article.click_num AS article_click_num, article.save_num AS article_save_num, article.love_num AS article_love_num, article.user_id AS article_user_id, article.type_id AS article_type_id 
+FROM article) AS anon_1
+2021-01-16 20:53:42,729 INFO sqlalchemy.engine.base.Engine {}
+[<Article 10>, <Article 8>, <Article 7>]
+1
+None
+2
+True
+False
+3
+9
+2021-01-16 20:53:42,731 INFO sqlalchemy.engine.base.Engine SELECT article_type.id AS article_type_id, article_type.type_name AS article_type_type_name 
+FROM article_type
+2021-01-16 20:53:42,731 INFO sqlalchemy.engine.base.Engine {}
+2021-01-16 20:53:42,732 INFO sqlalchemy.engine.base.Engine SELECT user.id AS user_id, user.username AS user_username, user.password AS user_password, user.phone AS user_phone, user.email AS user_email, user.icon AS user_icon, user.is_delete AS user_is_delete, user.register_time AS user_register_time 
+FROM user 
+WHERE user.id = %(param_1)s
+2021-01-16 20:53:42,732 INFO sqlalchemy.engine.base.Engine {'param_1': 5}
+2021-01-16 20:53:42,734 INFO sqlalchemy.engine.base.Engine SELECT user.id AS user_id, user.username AS user_username, user.password AS user_password, user.phone AS user_phone, user.email AS user_email, user.icon AS user_icon, user.is_delete AS user_is_delete, user.register_time AS user_register_time 
+FROM user 
+WHERE user.id = %(param_1)s
+2021-01-16 20:53:42,734 INFO sqlalchemy.engine.base.Engine {'param_1': 4}
+2021-01-16 20:53:42,736 INFO sqlalchemy.engine.base.Engine SELECT user.id AS user_id, user.username AS user_username, user.password AS user_password, user.phone AS user_phone, user.email AS user_email, user.icon AS user_icon, user.is_delete AS user_is_delete, user.register_time AS user_register_time 
+FROM user 
+WHERE user.id = %(param_1)s
+2021-01-16 20:53:42,736 INFO sqlalchemy.engine.base.Engine {'param_1': 1}
+<Response 8165 bytes [200 OK]>
+ImmutableMultiDict([('session', 'eyJ1c2VyX2lkIjo1fQ.YALhIg.rWtq755eoc4s7OZ-H_UX7W4r6Y8'), ('username', 'AKW')])
+2021-01-16 20:53:42,738 INFO sqlalchemy.engine.base.Engine ROLLBACK
+[pid: 20043|app: 0|req: 18/50] 43.250.201.49 () {40 vars in 838 bytes} [Sat Jan 16 20:53:42 2021] GET /user/ => generated 8165 bytes in 17 msecs (HTTP/1.1 200) 4 headers in 180 bytes (1 switches on core 7)
+before_first_request1: /user/myphoto
+referer: http://47.100.13.219:8080/user/center
+2021-01-16 20:54:24,650 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2021-01-16 20:54:24,651 INFO sqlalchemy.engine.base.Engine SELECT photo.id AS photo_id, photo.photo_name AS photo_photo_name, photo.photo_datetime AS photo_photo_datetime, photo.user_id AS photo_user_id 
+FROM photo 
+ LIMIT %(param_1)s, %(param_2)s
+2021-01-16 20:54:24,651 INFO sqlalchemy.engine.base.Engine {'param_1': 0, 'param_2': 3}
+2021-01-16 20:54:24,654 INFO sqlalchemy.engine.base.Engine SELECT count(*) AS count_1 
+FROM (SELECT photo.id AS photo_id, photo.photo_name AS photo_photo_name, photo.photo_datetime AS photo_photo_datetime, photo.user_id AS photo_user_id 
+FROM photo) AS anon_1
+2021-01-16 20:54:24,654 INFO sqlalchemy.engine.base.Engine {}
+2021-01-16 20:54:24,655 INFO sqlalchemy.engine.base.Engine SELECT article_type.id AS article_type_id, article_type.type_name AS article_type_type_name 
+FROM article_type
+2021-01-16 20:54:24,655 INFO sqlalchemy.engine.base.Engine {}
+<Response 5202 bytes [200 OK]>
+ImmutableMultiDict([])
+2021-01-16 20:54:24,658 INFO sqlalchemy.engine.base.Engine ROLLBACK
+[pid: 20043|app: 0|req: 19/51] 58.246.221.61 () {34 vars in 576 bytes} [Sat Jan 16 20:54:24 2021] GET /user/myphoto => generated 5202 bytes in 10 msecs (HTTP/1.1 200) 3 headers in 166 bytes (1 switches on core 8)
+before_first_request1: /user/board
+2021-01-16 20:54:26,868 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2021-01-16 20:54:26,868 INFO sqlalchemy.engine.base.Engine SELECT message_board.id AS message_board_id, message_board.content AS message_board_content, message_board.mdatetime AS message_board_mdatetime, message_board.user_id AS message_board_user_id 
+FROM message_board ORDER BY -message_board.mdatetime 
+ LIMIT %(param_1)s, %(param_2)s
+2021-01-16 20:54:26,868 INFO sqlalchemy.engine.base.Engine {'param_1': 0, 'param_2': 5}
+2021-01-16 20:54:26,872 INFO sqlalchemy.engine.base.Engine SELECT count(*) AS count_1 
+FROM (SELECT message_board.id AS message_board_id, message_board.content AS message_board_content, message_board.mdatetime AS message_board_mdatetime, message_board.user_id AS message_board_user_id 
+FROM message_board) AS anon_1
+2021-01-16 20:54:26,872 INFO sqlalchemy.engine.base.Engine {}
+2021-01-16 20:54:26,873 INFO sqlalchemy.engine.base.Engine SELECT article_type.id AS article_type_id, article_type.type_name AS article_type_type_name 
+FROM article_type
+2021-01-16 20:54:26,873 INFO sqlalchemy.engine.base.Engine {}
+2021-01-16 20:54:26,875 INFO sqlalchemy.engine.base.Engine SELECT user.id AS user_id, user.username AS user_username, user.password AS user_password, user.phone AS user_phone, user.email AS user_email, user.icon AS user_icon, user.is_delete AS user_is_delete, user.register_time AS user_register_time 
+FROM user 
+WHERE user.id = %(param_1)s
+2021-01-16 20:54:26,875 INFO sqlalchemy.engine.base.Engine {'param_1': 4}
+2021-01-16 20:54:26,877 INFO sqlalchemy.engine.base.Engine SELECT user.id AS user_id, user.username AS user_username, user.password AS user_password, user.phone AS user_phone, user.email AS user_email, user.icon AS user_icon, user.is_delete AS user_is_delete, user.register_time AS user_register_time 
+FROM user 
+WHERE user.id = %(param_1)s
+2021-01-16 20:54:26,877 INFO sqlalchemy.engine.base.Engine {'param_1': 1}
+<Response 11430 bytes [200 OK]>
+ImmutableMultiDict([])
+2021-01-16 20:54:26,879 INFO sqlalchemy.engine.base.Engine ROLLBACK
+[pid: 20043|app: 0|req: 20/52] 58.247.212.141 () {34 vars in 588 bytes} [Sat Jan 16 20:54:26 2021] GET /user/board => generated 11430 bytes in 13 msecs (HTTP/1.1 200) 3 headers in 167 bytes (1 switches on core 9)
+before_first_request1: /user/board
+2021-01-16 20:54:45,307 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2021-01-16 20:54:45,307 INFO sqlalchemy.engine.base.Engine SELECT message_board.id AS message_board_id, message_board.content AS message_board_content, message_board.mdatetime AS message_board_mdatetime, message_board.user_id AS message_board_user_id 
+FROM message_board ORDER BY -message_board.mdatetime 
+ LIMIT %(param_1)s, %(param_2)s
+2021-01-16 20:54:45,307 INFO sqlalchemy.engine.base.Engine {'param_1': 5, 'param_2': 5}
+2021-01-16 20:54:45,311 INFO sqlalchemy.engine.base.Engine SELECT count(*) AS count_1 
+FROM (SELECT message_board.id AS message_board_id, message_board.content AS message_board_content, message_board.mdatetime AS message_board_mdatetime, message_board.user_id AS message_board_user_id 
+FROM message_board) AS anon_1
+2021-01-16 20:54:45,311 INFO sqlalchemy.engine.base.Engine {}
+2021-01-16 20:54:45,312 INFO sqlalchemy.engine.base.Engine SELECT article_type.id AS article_type_id, article_type.type_name AS article_type_type_name 
+FROM article_type
+2021-01-16 20:54:45,312 INFO sqlalchemy.engine.base.Engine {}
+2021-01-16 20:54:45,314 INFO sqlalchemy.engine.base.Engine SELECT user.id AS user_id, user.username AS user_username, user.password AS user_password, user.phone AS user_phone, user.email AS user_email, user.icon AS user_icon, user.is_delete AS user_is_delete, user.register_time AS user_register_time 
+FROM user 
+WHERE user.id = %(param_1)s
+2021-01-16 20:54:45,314 INFO sqlalchemy.engine.base.Engine {'param_1': 1}
+<Response 7915 bytes [200 OK]>
+ImmutableMultiDict([])
+2021-01-16 20:54:45,315 INFO sqlalchemy.engine.base.Engine ROLLBACK
+[pid: 20044|app: 0|req: 12/53] 58.247.212.141 () {34 vars in 599 bytes} [Sat Jan 16 20:54:45 2021] GET /user/board?page=2 => generated 7915 bytes in 11 msecs (HTTP/1.1 200) 3 headers in 166 bytes (1 switches on core 1)
+before_first_request1: /user
+<Response streamed [308 PERMANENT REDIRECT]>
+ImmutableMultiDict([])
+[pid: 20044|app: 0|req: 13/54] 210.22.245.219 () {34 vars in 578 bytes} [Sat Jan 16 20:54:47 2021] GET /user => generated 269 bytes in 2 msecs (HTTP/1.1 308) 4 headers in 224 bytes (1 switches on core 2)
+before_first_request1: /article/detail
+2021-01-16 20:54:49,408 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2021-01-16 20:54:49,409 INFO sqlalchemy.engine.base.Engine SELECT article.id AS article_id, article.title AS article_title, article.content AS article_content, article.publish_date AS article_publish_date, article.click_num AS article_click_num, article.save_num AS article_save_num, article.love_num AS article_love_num, article.user_id AS article_user_id, article.type_id AS article_type_id 
+FROM article 
+WHERE article.id = %(param_1)s
+2021-01-16 20:54:49,409 INFO sqlalchemy.engine.base.Engine {'param_1': '10'}
+2021-01-16 20:54:49,411 INFO sqlalchemy.engine.base.Engine SELECT article_type.id AS article_type_id, article_type.type_name AS article_type_type_name 
+FROM article_type
+2021-01-16 20:54:49,411 INFO sqlalchemy.engine.base.Engine {}
+before_first_request1: /user/show_about
+需要验证用户的登录情况
+None
+<Response 8087 bytes [200 OK]>
+ImmutableMultiDict([])
+[pid: 20044|app: 0|req: 14/55] 223.166.151.197 () {34 vars in 583 bytes} [Sat Jan 16 20:54:49 2021] GET /user/show_about => generated 8087 bytes in 2 msecs (HTTP/1.1 200) 3 headers in 166 bytes (1 switches on core 3)
+2021-01-16 20:54:49,415 INFO sqlalchemy.engine.base.Engine SELECT user.id AS user_id, user.username AS user_username, user.password AS user_password, user.phone AS user_phone, user.email AS user_email, user.icon AS user_icon, user.is_delete AS user_is_delete, user.register_time AS user_register_time 
+FROM user 
+WHERE user.id = %(param_1)s
+2021-01-16 20:54:49,415 INFO sqlalchemy.engine.base.Engine {'param_1': 5}
+2021-01-16 20:54:49,417 INFO sqlalchemy.engine.base.Engine SELECT comment.id AS comment_id, comment.comment AS comment_comment, comment.user_id AS comment_user_id, comment.article_id AS comment_article_id, comment.comment_date AS comment_comment_date 
+FROM comment 
+WHERE comment.article_id = %(article_id_1)s ORDER BY -comment.comment_date 
+ LIMIT %(param_1)s, %(param_2)s
+2021-01-16 20:54:49,417 INFO sqlalchemy.engine.base.Engine {'article_id_1': '10', 'param_1': 0, 'param_2': 5}
+2021-01-16 20:54:49,422 INFO sqlalchemy.engine.base.Engine SELECT count(*) AS count_1 
+FROM (SELECT comment.id AS comment_id, comment.comment AS comment_comment, comment.user_id AS comment_user_id, comment.article_id AS comment_article_id, comment.comment_date AS comment_comment_date 
+FROM comment 
+WHERE comment.article_id = %(article_id_1)s) AS anon_1
+2021-01-16 20:54:49,422 INFO sqlalchemy.engine.base.Engine {'article_id_1': '10'}
+2021-01-16 20:54:49,424 INFO sqlalchemy.engine.base.Engine SELECT user.id AS user_id, user.username AS user_username, user.password AS user_password, user.phone AS user_phone, user.email AS user_email, user.icon AS user_icon, user.is_delete AS user_is_delete, user.register_time AS user_register_time 
+FROM user 
+WHERE user.id = %(param_1)s
+2021-01-16 20:54:49,424 INFO sqlalchemy.engine.base.Engine {'param_1': 4}
+2021-01-16 20:54:49,426 INFO sqlalchemy.engine.base.Engine SELECT user.id AS user_id, user.username AS user_username, user.password AS user_password, user.phone AS user_phone, user.email AS user_email, user.icon AS user_icon, user.is_delete AS user_is_delete, user.register_time AS user_register_time 
+FROM user 
+WHERE user.id = %(param_1)s
+2021-01-16 20:54:49,426 INFO sqlalchemy.engine.base.Engine {'param_1': 1}
+<Response 11650 bytes [200 OK]>
+ImmutableMultiDict([('session', 'eyJ1c2VyX2lkIjo1fQ.YALhIg.rWtq755eoc4s7OZ-H_UX7W4r6Y8')])
+2021-01-16 20:54:49,428 INFO sqlalchemy.engine.base.Engine ROLLBACK
+[pid: 20043|app: 0|req: 21/56] 43.250.201.49 () {40 vars in 859 bytes} [Sat Jan 16 20:54:49 2021] GET /article/detail?article_id=10 => generated 11650 bytes in 21 msecs (HTTP/1.1 200) 4 headers in 181 bytes (1 switches on core 0)
+before_first_request1: /user/
+ImmutableMultiDict([('username', 'AKW')])
+session: <SecureCookieSession {}>
+None
+2021-01-16 20:54:54,598 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2021-01-16 20:54:54,599 INFO sqlalchemy.engine.base.Engine SELECT article.id AS article_id, article.title AS article_title, article.content AS article_content, article.publish_date AS article_publish_date, article.click_num AS article_click_num, article.save_num AS article_save_num, article.love_num AS article_love_num, article.user_id AS article_user_id, article.type_id AS article_type_id 
+FROM article ORDER BY -article.publish_date 
+ LIMIT %(param_1)s, %(param_2)s
+2021-01-16 20:54:54,599 INFO sqlalchemy.engine.base.Engine {'param_1': 0, 'param_2': 3}
+2021-01-16 20:54:54,604 INFO sqlalchemy.engine.base.Engine SELECT count(*) AS count_1 
+FROM (SELECT article.id AS article_id, article.title AS article_title, article.content AS article_content, article.publish_date AS article_publish_date, article.click_num AS article_click_num, article.save_num AS article_save_num, article.love_num AS article_love_num, article.user_id AS article_user_id, article.type_id AS article_type_id 
+FROM article) AS anon_1
+2021-01-16 20:54:54,605 INFO sqlalchemy.engine.base.Engine {}
+[<Article 10>, <Article 8>, <Article 7>]
+1
+None
+2
+True
+False
+3
+9
+2021-01-16 20:54:54,606 INFO sqlalchemy.engine.base.Engine SELECT article_type.id AS article_type_id, article_type.type_name AS article_type_type_name 
+FROM article_type
+2021-01-16 20:54:54,606 INFO sqlalchemy.engine.base.Engine {}
+2021-01-16 20:54:54,630 INFO sqlalchemy.engine.base.Engine SELECT user.id AS user_id, user.username AS user_username, user.password AS user_password, user.phone AS user_phone, user.email AS user_email, user.icon AS user_icon, user.is_delete AS user_is_delete, user.register_time AS user_register_time 
+FROM user 
+WHERE user.id = %(param_1)s
+2021-01-16 20:54:54,630 INFO sqlalchemy.engine.base.Engine {'param_1': 4}
+2021-01-16 20:54:54,632 INFO sqlalchemy.engine.base.Engine SELECT user.id AS user_id, user.username AS user_username, user.password AS user_password, user.phone AS user_phone, user.email AS user_email, user.icon AS user_icon, user.is_delete AS user_is_delete, user.register_time AS user_register_time 
+FROM user 
+WHERE user.id = %(param_1)s
+2021-01-16 20:54:54,632 INFO sqlalchemy.engine.base.Engine {'param_1': 1}
+<Response 7315 bytes [200 OK]>
+ImmutableMultiDict([('username', 'AKW')])
+2021-01-16 20:54:54,634 INFO sqlalchemy.engine.base.Engine ROLLBACK
+[pid: 20044|app: 0|req: 15/57] 210.22.245.219 () {36 vars in 597 bytes} [Sat Jan 16 20:54:54 2021] GET /user/ => generated 7315 bytes in 38 msecs (HTTP/1.1 200) 3 headers in 166 bytes (1 switches on core 4)
+before_first_request1: /user/
+ImmutableMultiDict([])
+session: <SecureCookieSession {}>
+None
+2021-01-16 20:56:01,335 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2021-01-16 20:56:01,336 INFO sqlalchemy.engine.base.Engine SELECT article.id AS article_id, article.title AS article_title, article.content AS article_content, article.publish_date AS article_publish_date, article.click_num AS article_click_num, article.save_num AS article_save_num, article.love_num AS article_love_num, article.user_id AS article_user_id, article.type_id AS article_type_id 
+FROM article ORDER BY -article.publish_date 
+ LIMIT %(param_1)s, %(param_2)s
+2021-01-16 20:56:01,337 INFO sqlalchemy.engine.base.Engine {'param_1': 0, 'param_2': 3}
+2021-01-16 20:56:01,342 INFO sqlalchemy.engine.base.Engine SELECT count(*) AS count_1 
+FROM (SELECT article.id AS article_id, article.title AS article_title, article.content AS article_content, article.publish_date AS article_publish_date, article.click_num AS article_click_num, article.save_num AS article_save_num, article.love_num AS article_love_num, article.user_id AS article_user_id, article.type_id AS article_type_id 
+FROM article) AS anon_1
+2021-01-16 20:56:01,342 INFO sqlalchemy.engine.base.Engine {}
+[<Article 10>, <Article 8>, <Article 7>]
+1
+None
+2
+True
+False
+3
+9
+2021-01-16 20:56:01,343 INFO sqlalchemy.engine.base.Engine SELECT article_type.id AS article_type_id, article_type.type_name AS article_type_type_name 
+FROM article_type
+2021-01-16 20:56:01,343 INFO sqlalchemy.engine.base.Engine {}
+2021-01-16 20:56:01,345 INFO sqlalchemy.engine.base.Engine SELECT user.id AS user_id, user.username AS user_username, user.password AS user_password, user.phone AS user_phone, user.email AS user_email, user.icon AS user_icon, user.is_delete AS user_is_delete, user.register_time AS user_register_time 
+FROM user 
+WHERE user.id = %(param_1)s
+2021-01-16 20:56:01,345 INFO sqlalchemy.engine.base.Engine {'param_1': 4}
+2021-01-16 20:56:01,347 INFO sqlalchemy.engine.base.Engine SELECT user.id AS user_id, user.username AS user_username, user.password AS user_password, user.phone AS user_phone, user.email AS user_email, user.icon AS user_icon, user.is_delete AS user_is_delete, user.register_time AS user_register_time 
+FROM user 
+WHERE user.id = %(param_1)s
+2021-01-16 20:56:01,347 INFO sqlalchemy.engine.base.Engine {'param_1': 1}
+<Response 7315 bytes [200 OK]>
+ImmutableMultiDict([])
+2021-01-16 20:56:01,349 INFO sqlalchemy.engine.base.Engine ROLLBACK
+[pid: 20044|app: 0|req: 16/58] 110.53.65.237 () {36 vars in 698 bytes} [Sat Jan 16 20:56:01 2021] GET /user/ => generated 7315 bytes in 15 msecs (HTTP/1.1 200) 3 headers in 166 bytes (1 switches on core 5)
+before_first_request1: /img/bg.jpg
+<Response streamed [200 OK]>
+ImmutableMultiDict([('username', 'AKW')])
+[pid: 20044|app: 0|req: 17/59] 110.53.65.237 () {38 vars in 662 bytes} [Sat Jan 16 20:56:03 2021] GET /img/bg.jpg => generated 80025 bytes in 2 msecs via sendfile() (HTTP/1.1 200) 8 headers in 353 bytes (0 switches on core 6)
+before_first_request1: /favicon.ico
+<Response streamed [404 NOT FOUND]>
+ImmutableMultiDict([('username', 'AKW')])
+[pid: 20042|app: 0|req: 2/60] 110.53.65.237 () {38 vars in 664 bytes} [Sat Jan 16 20:56:03 2021] GET /favicon.ico => generated 232 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 172 bytes (1 switches on core 1)
+before_first_request1: /user/
+ImmutableMultiDict([('username', 'AKW')])
+session: <SecureCookieSession {}>
+None
+2021-01-16 20:56:10,157 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2021-01-16 20:56:10,157 INFO sqlalchemy.engine.base.Engine SELECT article.id AS article_id, article.title AS article_title, article.content AS article_content, article.publish_date AS article_publish_date, article.click_num AS article_click_num, article.save_num AS article_save_num, article.love_num AS article_love_num, article.user_id AS article_user_id, article.type_id AS article_type_id 
+FROM article ORDER BY -article.publish_date 
+ LIMIT %(param_1)s, %(param_2)s
+2021-01-16 20:56:10,157 INFO sqlalchemy.engine.base.Engine {'param_1': 3, 'param_2': 3}
+2021-01-16 20:56:10,162 INFO sqlalchemy.engine.base.Engine SELECT count(*) AS count_1 
+FROM (SELECT article.id AS article_id, article.title AS article_title, article.content AS article_content, article.publish_date AS article_publish_date, article.click_num AS article_click_num, article.save_num AS article_save_num, article.love_num AS article_love_num, article.user_id AS article_user_id, article.type_id AS article_type_id 
+FROM article) AS anon_1
+2021-01-16 20:56:10,162 INFO sqlalchemy.engine.base.Engine {}
+[<Article 6>, <Article 5>, <Article 4>]
+2
+1
+3
+True
+True
+3
+9
+2021-01-16 20:56:10,164 INFO sqlalchemy.engine.base.Engine SELECT article_type.id AS article_type_id, article_type.type_name AS article_type_type_name 
+FROM article_type
+2021-01-16 20:56:10,164 INFO sqlalchemy.engine.base.Engine {}
+2021-01-16 20:56:10,166 INFO sqlalchemy.engine.base.Engine SELECT user.id AS user_id, user.username AS user_username, user.password AS user_password, user.phone AS user_phone, user.email AS user_email, user.icon AS user_icon, user.is_delete AS user_is_delete, user.register_time AS user_register_time 
+FROM user 
+WHERE user.id = %(param_1)s
+2021-01-16 20:56:10,166 INFO sqlalchemy.engine.base.Engine {'param_1': 1}
+2021-01-16 20:56:10,169 INFO sqlalchemy.engine.base.Engine SELECT user.id AS user_id, user.username AS user_username, user.password AS user_password, user.phone AS user_phone, user.email AS user_email, user.icon AS user_icon, user.is_delete AS user_is_delete, user.register_time AS user_register_time 
+FROM user 
+WHERE user.id = %(param_1)s
+2021-01-16 20:56:10,169 INFO sqlalchemy.engine.base.Engine {'param_1': 2}
+2021-01-16 20:56:10,172 INFO sqlalchemy.engine.base.Engine SELECT user.id AS user_id, user.username AS user_username, user.password AS user_password, user.phone AS user_phone, user.email AS user_email, user.icon AS user_icon, user.is_delete AS user_is_delete, user.register_time AS user_register_time 
+FROM user 
+WHERE user.id = %(param_1)s
+2021-01-16 20:56:10,172 INFO sqlalchemy.engine.base.Engine {'param_1': 3}
+<Response 7551 bytes [200 OK]>
+ImmutableMultiDict([('username', 'AKW')])
+2021-01-16 20:56:10,174 INFO sqlalchemy.engine.base.Engine ROLLBACK
+[pid: 20044|app: 0|req: 18/61] 110.53.65.237 () {40 vars in 785 bytes} [Sat Jan 16 20:56:10 2021] GET /user/?page=2 => generated 7551 bytes in 20 msecs (HTTP/1.1 200) 3 headers in 166 bytes (1 switches on core 7)
+before_first_request1: /user/show_about
+需要验证用户的登录情况
+None
+<Response 8087 bytes [200 OK]>
+ImmutableMultiDict([('username', 'AKW')])
+[pid: 20044|app: 0|req: 19/62] 110.53.65.237 () {40 vars in 799 bytes} [Sat Jan 16 20:56:13 2021] GET /user/show_about => generated 8087 bytes in 2 msecs (HTTP/1.1 200) 3 headers in 166 bytes (1 switches on core 8)
+before_first_request1: /user/myphoto
+referer: http://47.100.13.219:8080/user/show_about
+2021-01-16 20:56:15,184 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2021-01-16 20:56:15,186 INFO sqlalchemy.engine.base.Engine SELECT photo.id AS photo_id, photo.photo_name AS photo_photo_name, photo.photo_datetime AS photo_photo_datetime, photo.user_id AS photo_user_id 
+FROM photo 
+ LIMIT %(param_1)s, %(param_2)s
+2021-01-16 20:56:15,186 INFO sqlalchemy.engine.base.Engine {'param_1': 0, 'param_2': 3}
+2021-01-16 20:56:15,190 INFO sqlalchemy.engine.base.Engine SELECT count(*) AS count_1 
+FROM (SELECT photo.id AS photo_id, photo.photo_name AS photo_photo_name, photo.photo_datetime AS photo_photo_datetime, photo.user_id AS photo_user_id 
+FROM photo) AS anon_1
+2021-01-16 20:56:15,190 INFO sqlalchemy.engine.base.Engine {}
+2021-01-16 20:56:15,191 INFO sqlalchemy.engine.base.Engine SELECT article_type.id AS article_type_id, article_type.type_name AS article_type_type_name 
+FROM article_type
+2021-01-16 20:56:15,191 INFO sqlalchemy.engine.base.Engine {}
+<Response 5202 bytes [200 OK]>
+ImmutableMultiDict([('username', 'AKW')])
+2021-01-16 20:56:15,200 INFO sqlalchemy.engine.base.Engine ROLLBACK
+[pid: 20041|app: 0|req: 21/63] 110.53.65.237 () {40 vars in 796 bytes} [Sat Jan 16 20:56:15 2021] GET /user/myphoto => generated 5202 bytes in 18 msecs (HTTP/1.1 200) 3 headers in 166 bytes (1 switches on core 0)
+before_first_request1: /user/board
+2021-01-16 20:56:15,776 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2021-01-16 20:56:15,777 INFO sqlalchemy.engine.base.Engine SELECT message_board.id AS message_board_id, message_board.content AS message_board_content, message_board.mdatetime AS message_board_mdatetime, message_board.user_id AS message_board_user_id 
+FROM message_board ORDER BY -message_board.mdatetime 
+ LIMIT %(param_1)s, %(param_2)s
+2021-01-16 20:56:15,777 INFO sqlalchemy.engine.base.Engine {'param_1': 0, 'param_2': 5}
+2021-01-16 20:56:15,780 INFO sqlalchemy.engine.base.Engine SELECT count(*) AS count_1 
+FROM (SELECT message_board.id AS message_board_id, message_board.content AS message_board_content, message_board.mdatetime AS message_board_mdatetime, message_board.user_id AS message_board_user_id 
+FROM message_board) AS anon_1
+2021-01-16 20:56:15,781 INFO sqlalchemy.engine.base.Engine {}
+2021-01-16 20:56:15,782 INFO sqlalchemy.engine.base.Engine SELECT article_type.id AS article_type_id, article_type.type_name AS article_type_type_name 
+FROM article_type
+2021-01-16 20:56:15,782 INFO sqlalchemy.engine.base.Engine {}
+2021-01-16 20:56:15,796 INFO sqlalchemy.engine.base.Engine SELECT user.id AS user_id, user.username AS user_username, user.password AS user_password, user.phone AS user_phone, user.email AS user_email, user.icon AS user_icon, user.is_delete AS user_is_delete, user.register_time AS user_register_time 
+FROM user 
+WHERE user.id = %(param_1)s
+2021-01-16 20:56:15,797 INFO sqlalchemy.engine.base.Engine {'param_1': 4}
+2021-01-16 20:56:15,799 INFO sqlalchemy.engine.base.Engine SELECT user.id AS user_id, user.username AS user_username, user.password AS user_password, user.phone AS user_phone, user.email AS user_email, user.icon AS user_icon, user.is_delete AS user_is_delete, user.register_time AS user_register_time 
+FROM user 
+WHERE user.id = %(param_1)s
+2021-01-16 20:56:15,799 INFO sqlalchemy.engine.base.Engine {'param_1': 1}
+<Response 11430 bytes [200 OK]>
+ImmutableMultiDict([('username', 'AKW')])
+2021-01-16 20:56:15,801 INFO sqlalchemy.engine.base.Engine ROLLBACK
+[pid: 20041|app: 0|req: 22/64] 110.53.65.237 () {40 vars in 789 bytes} [Sat Jan 16 20:56:15 2021] GET /user/board => generated 11430 bytes in 28 msecs (HTTP/1.1 200) 3 headers in 167 bytes (1 switches on core 1)
+before_first_request1: /upload/icon/3.jpg
+<Response streamed [200 OK]>
+ImmutableMultiDict([('username', 'AKW')])
+[pid: 20041|app: 0|req: 23/65] 110.53.65.237 () {38 vars in 681 bytes} [Sat Jan 16 20:56:15 2021] GET /upload/icon/3.jpg => generated 4195 bytes in 2 msecs via sendfile() (HTTP/1.1 200) 8 headers in 351 bytes (0 switches on core 2)
+before_first_request1: /img/Erha.jpg
+<Response streamed [200 OK]>
+ImmutableMultiDict([('username', 'AKW')])
+before_first_request1: /upload/icon/Erha.jpg
+<Response streamed [200 OK]>
+ImmutableMultiDict([('username', 'AKW')])
+[pid: 20043|app: 0|req: 23/66] 110.53.65.237 () {38 vars in 687 bytes} [Sat Jan 16 20:56:15 2021] GET /upload/icon/Erha.jpg => generated 60584 bytes in 1 msecs via sendfile() (HTTP/1.1 200) 8 headers in 353 bytes (0 switches on core 1)
+[pid: 20043|app: 0|req: 23/67] 110.53.65.237 () {38 vars in 671 bytes} [Sat Jan 16 20:56:15 2021] GET /img/Erha.jpg => generated 60584 bytes in 3 msecs via sendfile() (HTTP/1.1 200) 8 headers in 353 bytes (0 switches on core 2)
+before_first_request1: /user
+<Response streamed [308 PERMANENT REDIRECT]>
+ImmutableMultiDict([])
+[pid: 20041|app: 0|req: 24/68] 58.247.212.141 () {32 vars in 507 bytes} [Sat Jan 16 20:56:41 2021] GET /user => generated 269 bytes in 1 msecs (HTTP/1.1 308) 4 headers in 224 bytes (1 switches on core 3)
+before_first_request1: /user/
+ImmutableMultiDict([('username', 'AKW')])
+session: <SecureCookieSession {}>
+None
+2021-01-16 20:56:50,230 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2021-01-16 20:56:50,231 INFO sqlalchemy.engine.base.Engine SELECT article.id AS article_id, article.title AS article_title, article.content AS article_content, article.publish_date AS article_publish_date, article.click_num AS article_click_num, article.save_num AS article_save_num, article.love_num AS article_love_num, article.user_id AS article_user_id, article.type_id AS article_type_id 
+FROM article ORDER BY -article.publish_date 
+ LIMIT %(param_1)s, %(param_2)s
+2021-01-16 20:56:50,231 INFO sqlalchemy.engine.base.Engine {'param_1': 0, 'param_2': 3}
+2021-01-16 20:56:50,235 INFO sqlalchemy.engine.base.Engine SELECT count(*) AS count_1 
+FROM (SELECT article.id AS article_id, article.title AS article_title, article.content AS article_content, article.publish_date AS article_publish_date, article.click_num AS article_click_num, article.save_num AS article_save_num, article.love_num AS article_love_num, article.user_id AS article_user_id, article.type_id AS article_type_id 
+FROM article) AS anon_1
+2021-01-16 20:56:50,235 INFO sqlalchemy.engine.base.Engine {}
+[<Article 10>, <Article 8>, <Article 7>]
+1
+None
+2
+True
+False
+3
+9
+2021-01-16 20:56:50,236 INFO sqlalchemy.engine.base.Engine SELECT article_type.id AS article_type_id, article_type.type_name AS article_type_type_name 
+FROM article_type
+2021-01-16 20:56:50,237 INFO sqlalchemy.engine.base.Engine {}
+2021-01-16 20:56:50,239 INFO sqlalchemy.engine.base.Engine SELECT user.id AS user_id, user.username AS user_username, user.password AS user_password, user.phone AS user_phone, user.email AS user_email, user.icon AS user_icon, user.is_delete AS user_is_delete, user.register_time AS user_register_time 
+FROM user 
+WHERE user.id = %(param_1)s
+2021-01-16 20:56:50,239 INFO sqlalchemy.engine.base.Engine {'param_1': 4}
+2021-01-16 20:56:50,241 INFO sqlalchemy.engine.base.Engine SELECT user.id AS user_id, user.username AS user_username, user.password AS user_password, user.phone AS user_phone, user.email AS user_email, user.icon AS user_icon, user.is_delete AS user_is_delete, user.register_time AS user_register_time 
+FROM user 
+WHERE user.id = %(param_1)s
+2021-01-16 20:56:50,241 INFO sqlalchemy.engine.base.Engine {'param_1': 1}
+<Response 7315 bytes [200 OK]>
+ImmutableMultiDict([('username', 'AKW')])
+2021-01-16 20:56:50,243 INFO sqlalchemy.engine.base.Engine ROLLBACK
+[pid: 20044|app: 0|req: 20/69] 58.247.212.141 () {36 vars in 582 bytes} [Sat Jan 16 20:56:50 2021] GET /user/ => generated 7315 bytes in 15 msecs (HTTP/1.1 200) 3 headers in 166 bytes (1 switches on core 9)
+before_first_request1: /user
+<Response streamed [308 PERMANENT REDIRECT]>
+ImmutableMultiDict([])
+[pid: 20041|app: 0|req: 25/70] 58.247.212.141 () {32 vars in 587 bytes} [Sat Jan 16 20:57:32 2021] GET /user => generated 269 bytes in 1 msecs (HTTP/1.1 308) 4 headers in 224 bytes (1 switches on core 3)
+before_first_request1: /user/
+ImmutableMultiDict([('username', 'AKW')])
+session: <SecureCookieSession {}>
+None
+2021-01-16 20:57:42,937 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2021-01-16 20:57:42,937 INFO sqlalchemy.engine.base.Engine SELECT article.id AS article_id, article.title AS article_title, article.content AS article_content, article.publish_date AS article_publish_date, article.click_num AS article_click_num, article.save_num AS article_save_num, article.love_num AS article_love_num, article.user_id AS article_user_id, article.type_id AS article_type_id 
+FROM article ORDER BY -article.publish_date 
+ LIMIT %(param_1)s, %(param_2)s
+2021-01-16 20:57:42,937 INFO sqlalchemy.engine.base.Engine {'param_1': 0, 'param_2': 3}
+2021-01-16 20:57:42,942 INFO sqlalchemy.engine.base.Engine SELECT count(*) AS count_1 
+FROM (SELECT article.id AS article_id, article.title AS article_title, article.content AS article_content, article.publish_date AS article_publish_date, article.click_num AS article_click_num, article.save_num AS article_save_num, article.love_num AS article_love_num, article.user_id AS article_user_id, article.type_id AS article_type_id 
+FROM article) AS anon_1
+2021-01-16 20:57:42,942 INFO sqlalchemy.engine.base.Engine {}
+[<Article 10>, <Article 8>, <Article 7>]
+1
+None
+2
+True
+False
+3
+9
+2021-01-16 20:57:42,943 INFO sqlalchemy.engine.base.Engine SELECT article_type.id AS article_type_id, article_type.type_name AS article_type_type_name 
+FROM article_type
+2021-01-16 20:57:42,943 INFO sqlalchemy.engine.base.Engine {}
+2021-01-16 20:57:42,946 INFO sqlalchemy.engine.base.Engine SELECT user.id AS user_id, user.username AS user_username, user.password AS user_password, user.phone AS user_phone, user.email AS user_email, user.icon AS user_icon, user.is_delete AS user_is_delete, user.register_time AS user_register_time 
+FROM user 
+WHERE user.id = %(param_1)s
+2021-01-16 20:57:42,946 INFO sqlalchemy.engine.base.Engine {'param_1': 4}
+2021-01-16 20:57:42,947 INFO sqlalchemy.engine.base.Engine SELECT user.id AS user_id, user.username AS user_username, user.password AS user_password, user.phone AS user_phone, user.email AS user_email, user.icon AS user_icon, user.is_delete AS user_is_delete, user.register_time AS user_register_time 
+FROM user 
+WHERE user.id = %(param_1)s
+2021-01-16 20:57:42,947 INFO sqlalchemy.engine.base.Engine {'param_1': 1}
+<Response 7315 bytes [200 OK]>
+ImmutableMultiDict([('username', 'AKW')])
+2021-01-16 20:57:42,949 INFO sqlalchemy.engine.base.Engine ROLLBACK
+[pid: 20044|app: 0|req: 21/71] 58.247.212.141 () {36 vars in 662 bytes} [Sat Jan 16 20:57:42 2021] GET /user/ => generated 7315 bytes in 15 msecs (HTTP/1.1 200) 3 headers in 166 bytes (1 switches on core 0)
+before_first_request1: /user/show_about
+需要验证用户的登录情况
+None
+<Response 8087 bytes [200 OK]>
+ImmutableMultiDict([])
+[pid: 20041|app: 0|req: 26/72] 110.53.65.237 () {38 vars in 769 bytes} [Sat Jan 16 20:57:49 2021] GET /user/show_about => generated 8087 bytes in 2 msecs (HTTP/1.1 200) 3 headers in 166 bytes (1 switches on core 5)
+before_first_request1: /user/board
+2021-01-16 20:58:08,449 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2021-01-16 20:58:08,449 INFO sqlalchemy.engine.base.Engine SELECT message_board.id AS message_board_id, message_board.content AS message_board_content, message_board.mdatetime AS message_board_mdatetime, message_board.user_id AS message_board_user_id 
+FROM message_board ORDER BY -message_board.mdatetime 
+ LIMIT %(param_1)s, %(param_2)s
+2021-01-16 20:58:08,449 INFO sqlalchemy.engine.base.Engine {'param_1': 0, 'param_2': 5}
+2021-01-16 20:58:08,453 INFO sqlalchemy.engine.base.Engine SELECT count(*) AS count_1 
+FROM (SELECT message_board.id AS message_board_id, message_board.content AS message_board_content, message_board.mdatetime AS message_board_mdatetime, message_board.user_id AS message_board_user_id 
+FROM message_board) AS anon_1
+2021-01-16 20:58:08,453 INFO sqlalchemy.engine.base.Engine {}
+2021-01-16 20:58:08,454 INFO sqlalchemy.engine.base.Engine SELECT article_type.id AS article_type_id, article_type.type_name AS article_type_type_name 
+FROM article_type
+2021-01-16 20:58:08,454 INFO sqlalchemy.engine.base.Engine {}
+2021-01-16 20:58:08,457 INFO sqlalchemy.engine.base.Engine SELECT user.id AS user_id, user.username AS user_username, user.password AS user_password, user.phone AS user_phone, user.email AS user_email, user.icon AS user_icon, user.is_delete AS user_is_delete, user.register_time AS user_register_time 
+FROM user 
+WHERE user.id = %(param_1)s
+2021-01-16 20:58:08,457 INFO sqlalchemy.engine.base.Engine {'param_1': 4}
+2021-01-16 20:58:08,459 INFO sqlalchemy.engine.base.Engine SELECT user.id AS user_id, user.username AS user_username, user.password AS user_password, user.phone AS user_phone, user.email AS user_email, user.icon AS user_icon, user.is_delete AS user_is_delete, user.register_time AS user_register_time 
+FROM user 
+WHERE user.id = %(param_1)s
+2021-01-16 20:58:08,459 INFO sqlalchemy.engine.base.Engine {'param_1': 1}
+<Response 11430 bytes [200 OK]>
+ImmutableMultiDict([])
+2021-01-16 20:58:08,462 INFO sqlalchemy.engine.base.Engine ROLLBACK
+[pid: 20044|app: 0|req: 22/73] 110.53.65.237 () {38 vars in 764 bytes} [Sat Jan 16 20:58:08 2021] GET /user/board => generated 11430 bytes in 15 msecs (HTTP/1.1 200) 3 headers in 167 bytes (1 switches on core 1)
+before_first_request1: /user/board
+2021-01-16 20:58:14,494 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2021-01-16 20:58:14,495 INFO sqlalchemy.engine.base.Engine SELECT message_board.id AS message_board_id, message_board.content AS message_board_content, message_board.mdatetime AS message_board_mdatetime, message_board.user_id AS message_board_user_id 
+FROM message_board ORDER BY -message_board.mdatetime 
+ LIMIT %(param_1)s, %(param_2)s
+2021-01-16 20:58:14,495 INFO sqlalchemy.engine.base.Engine {'param_1': 5, 'param_2': 5}
+2021-01-16 20:58:14,498 INFO sqlalchemy.engine.base.Engine SELECT count(*) AS count_1 
+FROM (SELECT message_board.id AS message_board_id, message_board.content AS message_board_content, message_board.mdatetime AS message_board_mdatetime, message_board.user_id AS message_board_user_id 
+FROM message_board) AS anon_1
+2021-01-16 20:58:14,498 INFO sqlalchemy.engine.base.Engine {}
+2021-01-16 20:58:14,499 INFO sqlalchemy.engine.base.Engine SELECT article_type.id AS article_type_id, article_type.type_name AS article_type_type_name 
+FROM article_type
+2021-01-16 20:58:14,499 INFO sqlalchemy.engine.base.Engine {}
+2021-01-16 20:58:14,501 INFO sqlalchemy.engine.base.Engine SELECT user.id AS user_id, user.username AS user_username, user.password AS user_password, user.phone AS user_phone, user.email AS user_email, user.icon AS user_icon, user.is_delete AS user_is_delete, user.register_time AS user_register_time 
+FROM user 
+WHERE user.id = %(param_1)s
+2021-01-16 20:58:14,501 INFO sqlalchemy.engine.base.Engine {'param_1': 1}
+<Response 7915 bytes [200 OK]>
+ImmutableMultiDict([('username', 'AKW')])
+2021-01-16 20:58:14,503 INFO sqlalchemy.engine.base.Engine ROLLBACK
+[pid: 20041|app: 0|req: 27/74] 110.53.65.237 () {40 vars in 799 bytes} [Sat Jan 16 20:58:14 2021] GET /user/board?page=2 => generated 7915 bytes in 11 msecs (HTTP/1.1 200) 3 headers in 166 bytes (1 switches on core 6)
+before_first_request1: /user/board
+2021-01-16 20:58:16,424 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2021-01-16 20:58:16,424 INFO sqlalchemy.engine.base.Engine SELECT message_board.id AS message_board_id, message_board.content AS message_board_content, message_board.mdatetime AS message_board_mdatetime, message_board.user_id AS message_board_user_id 
+FROM message_board ORDER BY -message_board.mdatetime 
+ LIMIT %(param_1)s, %(param_2)s
+2021-01-16 20:58:16,424 INFO sqlalchemy.engine.base.Engine {'param_1': 0, 'param_2': 5}
+2021-01-16 20:58:16,428 INFO sqlalchemy.engine.base.Engine SELECT count(*) AS count_1 
+FROM (SELECT message_board.id AS message_board_id, message_board.content AS message_board_content, message_board.mdatetime AS message_board_mdatetime, message_board.user_id AS message_board_user_id 
+FROM message_board) AS anon_1
+2021-01-16 20:58:16,428 INFO sqlalchemy.engine.base.Engine {}
+2021-01-16 20:58:16,429 INFO sqlalchemy.engine.base.Engine SELECT article_type.id AS article_type_id, article_type.type_name AS article_type_type_name 
+FROM article_type
+2021-01-16 20:58:16,429 INFO sqlalchemy.engine.base.Engine {}
+2021-01-16 20:58:16,431 INFO sqlalchemy.engine.base.Engine SELECT user.id AS user_id, user.username AS user_username, user.password AS user_password, user.phone AS user_phone, user.email AS user_email, user.icon AS user_icon, user.is_delete AS user_is_delete, user.register_time AS user_register_time 
+FROM user 
+WHERE user.id = %(param_1)s
+2021-01-16 20:58:16,431 INFO sqlalchemy.engine.base.Engine {'param_1': 4}
+2021-01-16 20:58:16,433 INFO sqlalchemy.engine.base.Engine SELECT user.id AS user_id, user.username AS user_username, user.password AS user_password, user.phone AS user_phone, user.email AS user_email, user.icon AS user_icon, user.is_delete AS user_is_delete, user.register_time AS user_register_time 
+FROM user 
+WHERE user.id = %(param_1)s
+2021-01-16 20:58:16,433 INFO sqlalchemy.engine.base.Engine {'param_1': 1}
+<Response 11430 bytes [200 OK]>
+ImmutableMultiDict([('username', 'AKW')])
+2021-01-16 20:58:16,435 INFO sqlalchemy.engine.base.Engine ROLLBACK
+[pid: 20041|app: 0|req: 28/75] 110.53.65.237 () {40 vars in 793 bytes} [Sat Jan 16 20:58:16 2021] GET /user/board => generated 11430 bytes in 13 msecs (HTTP/1.1 200) 3 headers in 167 bytes (1 switches on core 8)
+before_first_request1: /user/board
+2021-01-16 20:58:17,779 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2021-01-16 20:58:17,780 INFO sqlalchemy.engine.base.Engine SELECT message_board.id AS message_board_id, message_board.content AS message_board_content, message_board.mdatetime AS message_board_mdatetime, message_board.user_id AS message_board_user_id 
+FROM message_board ORDER BY -message_board.mdatetime 
+ LIMIT %(param_1)s, %(param_2)s
+2021-01-16 20:58:17,780 INFO sqlalchemy.engine.base.Engine {'param_1': 0, 'param_2': 5}
+2021-01-16 20:58:17,785 INFO sqlalchemy.engine.base.Engine SELECT count(*) AS count_1 
+FROM (SELECT message_board.id AS message_board_id, message_board.content AS message_board_content, message_board.mdatetime AS message_board_mdatetime, message_board.user_id AS message_board_user_id 
+FROM message_board) AS anon_1
+2021-01-16 20:58:17,785 INFO sqlalchemy.engine.base.Engine {}
+2021-01-16 20:58:17,787 INFO sqlalchemy.engine.base.Engine SELECT article_type.id AS article_type_id, article_type.type_name AS article_type_type_name 
+FROM article_type
+2021-01-16 20:58:17,787 INFO sqlalchemy.engine.base.Engine {}
+2021-01-16 20:58:17,791 INFO sqlalchemy.engine.base.Engine SELECT user.id AS user_id, user.username AS user_username, user.password AS user_password, user.phone AS user_phone, user.email AS user_email, user.icon AS user_icon, user.is_delete AS user_is_delete, user.register_time AS user_register_time 
+FROM user 
+WHERE user.id = %(param_1)s
+2021-01-16 20:58:17,791 INFO sqlalchemy.engine.base.Engine {'param_1': 4}
+2021-01-16 20:58:17,795 INFO sqlalchemy.engine.base.Engine SELECT user.id AS user_id, user.username AS user_username, user.password AS user_password, user.phone AS user_phone, user.email AS user_email, user.icon AS user_icon, user.is_delete AS user_is_delete, user.register_time AS user_register_time 
+FROM user 
+WHERE user.id = %(param_1)s
+2021-01-16 20:58:17,795 INFO sqlalchemy.engine.base.Engine {'param_1': 1}
+<Response 11430 bytes [200 OK]>
+ImmutableMultiDict([('username', 'AKW')])
+2021-01-16 20:58:17,798 INFO sqlalchemy.engine.base.Engine ROLLBACK
+[pid: 20041|app: 0|req: 29/76] 110.53.65.237 () {40 vars in 786 bytes} [Sat Jan 16 20:58:17 2021] GET /user/board => generated 11430 bytes in 25 msecs (HTTP/1.1 200) 3 headers in 167 bytes (1 switches on core 7)
+before_first_request1: /user/login
+<Response 8087 bytes [200 OK]>
+ImmutableMultiDict([('username', 'AKW')])
+[pid: 20041|app: 0|req: 30/77] 110.53.65.237 () {40 vars in 786 bytes} [Sat Jan 16 20:58:25 2021] GET /user/login => generated 8087 bytes in 3 msecs (HTTP/1.1 200) 3 headers in 166 bytes (1 switches on core 9)
+before_first_request1: /user/register
+<Response 6576 bytes [200 OK]>
+ImmutableMultiDict([('username', 'AKW')])
+[pid: 20042|app: 0|req: 3/78] 110.53.65.237 () {40 vars in 793 bytes} [Sat Jan 16 20:58:33 2021] GET /user/register => generated 6576 bytes in 34 msecs (HTTP/1.1 200) 3 headers in 166 bytes (1 switches on core 2)

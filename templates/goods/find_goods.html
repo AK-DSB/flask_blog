@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--  要求当前页面使用IE浏览器最高版本的内核来渲染-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=0">
+    <meta charset="UTF-8">
+    <title>find_goods</title>
+    <link rel="stylesheet" href="/css/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+</head>
+<body>
+<h1>用户名:{{ user.username }}</h1>
+<h2>此用户买的商品如下</h2>
+{#users = db.relationship('User', backref='goods', secondary='user_goods')#}
+<ul>
+    {% for good in user.goods_list %}
+        <li>{{ good }}--{{ good.price }}</li>
+    {% endfor %}
+</ul>
+</body>
+</html>

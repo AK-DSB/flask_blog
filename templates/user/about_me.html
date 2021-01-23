@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% block title %}
+    关于我
+{% endblock %}
+{% block styles %}
+    {{ super() }}
+    <style>
+        #container {
+            width: 1200px;
+            margin: 0 auto;
+        }
+        #container p {
+            width: 80%;
+            background-color: #83cae3;
+        }
+    </style>
+{% endblock %}
+{% block newcontent %}
+    <div id="container">
+        {% if user.about %}
+            {% for about in user.about %}
+            <p>
+                {{ about.content | cdecode1 | safe }}
+            </p>
+            {% endfor %}
+            {% else %}
+            还没有设关于我呢，去用户中心设置吧
+        {% endif %}
+
+    </div>
+{% endblock %}

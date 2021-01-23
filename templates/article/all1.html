@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>用户所有文章</title>
+    <link rel="stylesheet" href="/css/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container">
+                {# 通过用户找文章正向引用 articles = db.relationship('Article', backref='user')#}
+    {{ user.articles }}
+    {% for article in user.articles %}
+        <div class="row">
+            <p>
+                <h3>{{ article.title }}</h3>
+            <div>作者: {{ user.username }}</div>
+            </p>
+        <p>
+            {{ article.content }}
+        </p>
+        <div>{{ article.publish_date }}</div>
+        </div>
+    {% endfor %}
+</div>
+</body>
+</html>
